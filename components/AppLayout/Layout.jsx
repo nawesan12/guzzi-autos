@@ -1,13 +1,11 @@
 import Header from './Header'
 import Footer from './Footer'
 
-export default function AppLayout({ children }) {
+export default function Layout({ children }) {
     return(
         <>
         <Header/>
-        <main>
-            {children}
-        </main>
+        {children}
         <Footer/>
         </>
     )
