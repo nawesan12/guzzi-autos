@@ -19,10 +19,11 @@ export default function Footer(){
                 justify-content:center;
                 background:#101010;
                 color:#f5f5f5;    
+                height:10vh;
             }
 
             .app_footer p {
-                font-size:1.2rem;
+                font-size:1.1rem;
             }
         `}</style>
         </>

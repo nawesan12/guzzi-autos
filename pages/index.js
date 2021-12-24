@@ -11,9 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AppLayout>
-        <p>Hola soy la pagina de inicioooo</p>
-      </AppLayout>
+      <p>Hola soy la pagina de inicioooo</p>
+      
       
     </>
   )
