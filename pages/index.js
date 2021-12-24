@@ -10,10 +10,9 @@ export default function Home() {
         <meta name="description" content="Pagina web para Guzzi Autos" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <p>Hola soy la pagina de inicioooo</p>
-      
-      
+      <AppLayout>
+        <p>Hola soy la pagina de inicioooo</p>
+      </AppLayout>
     </>
   )
 }
