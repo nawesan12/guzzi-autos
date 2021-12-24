@@ -10,7 +10,7 @@ export default function Header(){
         <>
         <header className="app_header">
             <section className="nav_logo">
-                <Image src="https://picsum.photos/300/300" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
+                {/*<Image src="https://picsum.photos/300/300" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>*/}
             </section>
 
             <nav>
