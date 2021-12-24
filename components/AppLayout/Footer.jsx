@@ -6,7 +6,7 @@ export default function Footer(){
         <footer className="app_footer">
             <p>Guzzi Autos - 2022</p>
             <div className="social_media">
-                <Link href="phone:+542235929292"><a>Whatsapp</a></Link>
+                <Link href="https://www.google.com"><a>Whatsapp</a></Link>
                 <Link href="https://www.instagram.com/guzziautos"><a>Instagram</a></Link>
                 <Link href="https://www.facebook.com"><a>Facebook</a></Link>
             </div>

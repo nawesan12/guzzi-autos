@@ -1,7 +1,7 @@
 import Header from './Header'
 import Footer from './Footer'
 
-export default function AppLayout({children}) {
+export default function AppLayout({ children }) {
     return(
         <>
         <Header/>
