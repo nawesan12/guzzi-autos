@@ -10,7 +10,7 @@ export default function Header(){
         <>
         <header className="app_header">
             <section className="nav_logo">
-                <Image src="/favicon.ico" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas">
+                <Image src="/favicon.ico" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
             </section>
 
             <nav>
