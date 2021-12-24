@@ -30,7 +30,7 @@ export default function Footer(){
                 justify-content:space-evenly;
                 background:#101010;
                 color:#f5f5f5;    
-                height:12vh;
+                height:10vh;
                 width:100vw;
             }
 

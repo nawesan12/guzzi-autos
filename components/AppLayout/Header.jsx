@@ -10,7 +10,7 @@ export default function Header(){
         <>
         <header className="app_header">
             <section className="nav_logo">
-                <Image src="/favicon.ico" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
+                <Image src="/images/car.ico" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
             </section>
 
             <nav className={isOpen ? "nav visible" : "nav hidden"}>
@@ -68,21 +68,22 @@ export default function Header(){
                 height:10vh;
                 width:100vw;
                 color:#f5f5f5;
-                background:#292929;
+                background:#252525;
             }
 
             .nav_logo {
                 position:relative;
-                height:70%;
-                width:6rem;
+                height:100%;
+                width:4rem;
             }
 
             .nav_list {
                 display:flex;
+                margin:1rem auto;
                 flex-direction:column;
                 align-items:center;
                 justify-content:center;
-                background:rgba(0,0,0,.8);
+                background:rgba(0,0,0,.85);
                 position:absolute;
                 top:8vh;
                 left:0;         
@@ -93,6 +94,13 @@ export default function Header(){
 
             .nav_link {
                 list-style-type:none;
+                margin:2rem 0;
+                font-size:1.3rem;
+                font-weight:bold;
+            }
+
+            .nav_link a {
+                margin:0;
             }
 
             .header_media {
@@ -110,8 +118,56 @@ export default function Header(){
             .visible {
                 display:flex;
             }
-            @media screen and (min-width:1300) {  
 
+            .ventas {
+                background:#802020;
+                padding:1rem 2rem;
+                border-radius:1rem;
+            }
+
+            @media screen and (min-width:1200px) {  
+                .burger {
+                    display:none;
+                }
+
+                .header_media {
+                    display:flex;
+                }
+
+                .header_media a {
+                    margin:0 1rem;
+                }
+               
+
+                .nav_list {
+                    display:flex;
+                    position:static;
+                    flex-direction:row;
+                    background:none;
+                    width:20vw;
+                    height:100%
+                }
+
+                .ventas {
+                    padding:.5rem 1rem;
+                }
+
+                .nav_link {
+                    font-weight:400;
+                    font-size:1rem;
+                    margin:1rem;
+                    border: 3px solid transparent;
+                }
+
+                .nav_link:hover {
+                    border-bottom:3px solid #802020
+                }
+
+
+
+                .hidden {
+                    display:flex;
+                }
             }
         `}</style>
         </>
