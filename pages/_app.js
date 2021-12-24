@@ -3,9 +3,8 @@ import Layout from '../components/AppLayout/Layout'
 
 function MyApp({ Component, pageProps }) {
   return(
-    <Layout>
       <Component {...pageProps} />
-    </Layout>
+    
   )
 }
 
