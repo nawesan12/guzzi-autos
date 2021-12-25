@@ -3,3 +3,5 @@ export default function Clientes() {
         <p>Clientes</p>
     )
 } 
+
+// Separar por secciones

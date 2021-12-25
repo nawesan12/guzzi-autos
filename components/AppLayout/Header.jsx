@@ -28,7 +28,7 @@ export default function Header(){
                         <Link href="/clientes"><a>Clientes</a></Link>
                     </li>
                     <li className="nav_link ventas">
-                        <Link href="/ventas"><a>Ventas</a></Link>
+                        <Link href="/ventas"><a title="Tenemos el usado que buscas">Ventas</a></Link>
                     </li>
                 </ul>
             </nav>
