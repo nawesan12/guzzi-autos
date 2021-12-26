@@ -10,11 +10,10 @@ export default function Header(){
         <>
         <header className="app_header">
             <section className="nav_logo">
-                <Image src="/images/car.ico" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
+                <Image src="/images/car.png" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
             </section>
 
-            <nav className={isOpen ? "nav visible" : "nav hidden"}>
-                <ul className="nav_list">
+                <ul className={isOpen ? "nav_list visible" : "nav_list hidden"}>
                     <li className="nav_link">
                         <Link href="/"><a>Inicio</a></Link>
                     </li>
@@ -31,7 +30,6 @@ export default function Header(){
                         <Link href="/ventas"><a title="Tenemos el usado que buscas">Ventas</a></Link>
                     </li>
                 </ul>
-            </nav>
 
             <span className="burger" onClick={() => setIsOpen(!isOpen)}>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -69,17 +67,17 @@ export default function Header(){
                 width:100vw;
                 color:#f5f5f5;
                 background:#252525;
+                transition:.3s all ease;
             }
 
             .nav_logo {
                 position:relative;
-                height:100%;
-                width:4rem;
+                height:60%;
+                width:8rem;
             }
 
             .nav_list {
                 display:flex;
-                margin:1rem auto;
                 flex-direction:column;
                 align-items:center;
                 justify-content:center;
@@ -89,7 +87,7 @@ export default function Header(){
                 left:0;         
                 width:100vw;
                 height:90vh;
-
+                margin:1rem auto;
             }
 
             .nav_link {

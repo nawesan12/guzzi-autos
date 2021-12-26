@@ -1,31 +1,85 @@
 export default function Main() {
     return(
-        <>
-            <section className="home_main">
-                <h1>Guzzi Autos</h1>
-                <video src="/images/rickroll.mp4" className="video_rickroll" autoPlay/>
+        <section className="home_main">
+            <section className="background">
+                <video src="/images/rickroll.mp4" className="video_rickroll" loop autoPlay muted/>
+            </section>
+            <section className="presentation">
+                <p className="welcome">Bienvenidos a</p>
+                <h1 className="titulo">Guzzi Autos</h1>
+                <p className="phrase">Mantenimiento, limpieza y ventas!</p>
+                <button className="about_us">Sobre nosotros</button>
+            </section>
+            <section className="presentation_photo">
+                una foto de algo
             </section>
             <style jsx>{`
+            @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fruktur&family=Poppins:wght@200&display=swap');
+
                 .home_main {
                     height:80vh;
                     width:100vw;
                     display:flex;
                     align-items:center;
-                    justify-content:center;
-                    background:url('')
+                    text-align:center;
+                    justify-content:space-evenly;
+                    flex-direction:column;
                 }
 
-                .video_rickroll {
+                .background {
+                    max-width:100vw;
                     position:absolute;
                     top:10vh;
                     left:0;
                     z-index:-1;
+                    height:85vh;
+                    overflow: hidden;
+                }
+
+                .video_rickroll {
                     opacity:.8;
                     position:center;
-                    width:100vw;
-                    object-fit:cover;
+                    height:100%;
+                    object-fit: cover;
+                    filter: brightness(0.4) blur(2px);
+                }
+
+                .titulo {
+                    font-family: 'Black Ops One', cursive;
+                    font-size:5rem;
+                    margin:2rem auto;
+                }
+
+                .welcome {
+                    font-weight:bold;
+                    font-size:1.3rem;
+                }
+
+                .phrase {
+                    font-family: 'Black Ops one', cursive;
+                    font-size:1.1rem;
+                }
+
+                .about_us {
+                    padding:1rem 2rem;
+                    font-size:1.1rem;
+                    background:#802020;
+                    outline:none;
+                    border:none;
+                    margin:2rem auto 0;
+                    font-weight:bold;
+                    transition:all .3s;
+                }
+
+                .about_us:hover {
+                    background:#701010;
+                    color:#ccc;
+                }
+
+                .presentation_photo {
+                    display:none;
                 }
             `}</style>
-        </>
+        </section>
     )
 }
