@@ -74,15 +74,24 @@ export default function Main() {
                     margin:2rem auto 0;
                     font-weight:bold;
                     transition:all .3s;
+                    cursor:pointer;
                 }
 
                 .about_us:hover {
                     background:#701010;
                     color:#ccc;
+                    border:3px dashed black;
+                    border-radius:1.5rem;
                 }
 
                 .presentation_photo {
                     display:none;
+                }
+
+                @media screen and (min-width:1200px) {
+                    .video_rickroll {
+                        width:100vw;
+                    }
                 }
             `}</style>
         </section>

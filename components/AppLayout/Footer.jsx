@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <>
         <footer className="app_footer">
-            <p>Guzzi Autos - 2022</p>
+            <p>Ricardo Guzzi - 2022</p>
             <div className="social_media">
                 <Link href="https://www.google.com"><a><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -22,6 +22,7 @@ export default function Footer(){
                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                 </svg></a></Link>
             </div>
+            <span>Pagina hecha por Nahuel Santillan</span>
         </footer>
         <style jsx>{`
             .app_footer {
@@ -41,6 +42,12 @@ export default function Footer(){
 
             .social_media a {
                 margin:.1rem 1rem;
+            }
+
+            span {
+                font-size:.6rem;
+                bottom:.4rem;
+                position:absolute;
             }
         `}</style>
         </>

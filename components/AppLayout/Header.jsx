@@ -19,7 +19,7 @@ export default function Header(){
                 <Image src="/images/car.png" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas" onClick={() => router.push('/')}/>
             </section>
 
-                <ul className={isOpen ? "nav_list visible" : "nav_list hidden"}>
+                <div className={isOpen ? "nav_list visible" : "nav_list hidden"}>
                     <li className="nav_link" onClick={() => hideNav()}>
                         <Link href="/" ><a>Inicio</a></Link>
                     </li>
@@ -35,7 +35,7 @@ export default function Header(){
                     <li className="nav_link ventas" onClick={() => hideNav()}>
                         <Link href="/ventas"><a title="Tenemos el usado que buscas">Ventas</a></Link>
                     </li>
-                </ul>
+                </div>
 
             <span className="burger" onClick={() => setIsOpen(!isOpen)}>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -91,6 +91,7 @@ export default function Header(){
                 position:absolute;
                 top:8vh;
                 left:0;         
+                z-index:15;
                 width:100vw;
                 height:90vh;
                 margin:1rem auto;
@@ -130,6 +131,10 @@ export default function Header(){
             }
 
             @media screen and (min-width:1200px) {  
+                .app_header {
+                    padding:0 3rem;
+                }
+
                 .burger {
                     display:none;
                 }
@@ -148,7 +153,7 @@ export default function Header(){
                     position:static;
                     flex-direction:row;
                     background:none;
-                    width:20vw;
+                    width:15vw;
                     height:100%
                 }
 

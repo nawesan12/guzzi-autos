@@ -1,6 +1,8 @@
+import Main from '../../components/Contacto/Main';
+
 export default function Contacto() {
     return(
-        <p>Contacto</p>
+        <Main/>
     )
 }
 
