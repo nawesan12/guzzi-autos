@@ -1,32 +1,38 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Header(){
 
     const [isOpen, setIsOpen] = useState(false)
+    const router = useRouter()
+
+    const hideNav = () => {
+        setIsOpen(false)
+    }
 
     return(
         <>
         <header className="app_header">
             <section className="nav_logo">
-                <Image src="/images/car.png" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas"/>
+                <Image src="/images/car.png" layout="fill" object-fit="cover" alt="Guzzi Autos - Mantenimiento, limpieza y ventas" onClick={() => router.push('/')}/>
             </section>
 
                 <ul className={isOpen ? "nav_list visible" : "nav_list hidden"}>
-                    <li className="nav_link">
-                        <Link href="/"><a>Inicio</a></Link>
+                    <li className="nav_link" onClick={() => hideNav()}>
+                        <Link href="/" ><a>Inicio</a></Link>
                     </li>
-                    <li className="nav_link">
+                    <li className="nav_link" onClick={() => hideNav()}>
                         <Link href="/servicios"><a>Servicios</a></Link>
                     </li>
-                    <li className="nav_link">
+                    <li className="nav_link" onClick={() => hideNav()}>
                         <Link href="/contacto"><a>Contacto</a></Link>
                     </li>
-                    <li className="nav_link">
+                    <li className="nav_link" onClick={() => hideNav()}>
                         <Link href="/clientes"><a>Clientes</a></Link>
                     </li>
-                    <li className="nav_link ventas">
+                    <li className="nav_link ventas" onClick={() => hideNav()}>
                         <Link href="/ventas"><a title="Tenemos el usado que buscas">Ventas</a></Link>
                     </li>
                 </ul>

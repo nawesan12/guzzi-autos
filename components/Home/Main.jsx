@@ -1,4 +1,9 @@
+import { useRouter } from 'next/router'; 
+
 export default function Main() {
+
+    const router = useRouter();
+
     return(
         <section className="home_main">
             <section className="background">
@@ -8,7 +13,7 @@ export default function Main() {
                 <p className="welcome">Bienvenidos a</p>
                 <h1 className="titulo">Guzzi Autos</h1>
                 <p className="phrase">Mantenimiento, limpieza y ventas!</p>
-                <button className="about_us">Sobre nosotros</button>
+                <button className="about_us" onClick={() => router.push('/servicios')}>Sobre nosotros</button>
             </section>
             <section className="presentation_photo">
                 una foto de algo
@@ -41,7 +46,7 @@ export default function Main() {
                     position:center;
                     height:100%;
                     object-fit: cover;
-                    filter: brightness(0.4) blur(2px);
+                    filter: brightness(0.4);
                 }
 
                 .titulo {
@@ -56,8 +61,8 @@ export default function Main() {
                 }
 
                 .phrase {
-                    font-family: 'Black Ops one', cursive;
                     font-size:1.1rem;
+                    font-weight:bold;
                 }
 
                 .about_us {

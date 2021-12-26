@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Guzzi Autos</title>
         <meta name="description" content="Pagina web para Guzzi Autos" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/car.ico" />
       </Head>
 
       <Main/>
