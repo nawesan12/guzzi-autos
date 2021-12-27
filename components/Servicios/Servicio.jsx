@@ -8,15 +8,19 @@ export default function Servicio(props) {
     return(
         <>
             <section className="service">
-                <button onClick={() => setActive(!active)}><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-down" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <button onClick={() => setActive(!active)}><svg xmlns="http://www.w3.org/2000/svg" className={!active ? "icon icon-tabler icon-tabler-chevron-down" : "svgactive icon icon-tabler icon-tabler-chevron-down"}  width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <polyline points="6 9 12 15 18 9" />
                     </svg> {props.title} </button>
                 <article className={!active ? "service_panel hidden" : "service_panel active"}>
                     <p>{props.description}</p>
                     <div className="image-container">
-                        <Image src={props.image1} alt={props.title} width={180} height={180} />
-                        <Image src={props.image2} alt={props.title} width={180} height={180} />
+                        <div className="image">
+                            <Image src={props.image1} alt={props.title} layout="fill" object-fill="cover"/>
+                        </div>
+                        <div className="image">
+                            <Image src={props.image2} alt={props.title} layout="fill" object-fit="cover"/>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -55,7 +59,7 @@ export default function Servicio(props) {
                 }
 
                 .service_panel p {
-                    text-align:center;                    
+                    padding:0 2rem;
                 }
 
                 .image-container {
@@ -69,6 +73,20 @@ export default function Servicio(props) {
 
                 .active {
                     display:block;
+                }
+
+                .image {
+                    position:relative;
+                    height:12rem;
+                    width:10rem;
+                }
+
+                svg {
+                    transition: all .3s ease-in-out;
+                }
+
+                .svgactive {
+                    transform: rotate(180deg);
                 }
             `}</style>
         </>
