@@ -65,6 +65,16 @@ export default function Main() {
                 margin-top:2rem;
             }
 
+            .service_presentation:after {
+                content:'';
+                color:white;
+                position:absolute;
+                bottom:0;
+                width:100vw;
+                height:10vh;
+                background: linear-gradient(0deg, #292929 40%, rgba(41,41,41,0.5) 70%, rgba(0,0,0,0) 100%);
+            }
+
             @keyframes bouncing {
                 0% {
                     animation-timing-function: ease-in;

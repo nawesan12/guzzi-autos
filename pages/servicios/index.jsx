@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Main from '../../components/Servicios/Main'
 import ServiciosCont from '../../components/Servicios/ServiciosCont'
+import Benefits from '../../components/Servicios/Benefits'
 
 export default function Servicios() {
     return(
@@ -13,6 +14,7 @@ export default function Servicios() {
         </Head>
         <Main />
         <ServiciosCont />
+        <Benefits />
         </section>
     )
 }
