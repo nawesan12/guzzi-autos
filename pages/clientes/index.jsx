@@ -19,7 +19,6 @@ export default function Clientes() {
                 width:100vw;
                 background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;
                 background-size:cover;
-                filter: brightness(0.4);
                 position:relative;
                 z-index:0;
                 overflow-y:scroll;
