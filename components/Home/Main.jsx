@@ -15,12 +15,7 @@ export default function Main() {
                 <p className="phrase">Mantenimiento, limpieza y ventas!</p>
                 <button className="about_us" onClick={() => router.push('/servicios')}>Sobre nosotros</button>
             </section>
-            <section className="presentation_photo">
-                una foto de algo
-            </section>
             <style jsx>{`
-            @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fruktur&family=Poppins:wght@200&display=swap');
-
                 .home_main {
                     height:80vh;
                     width:100vw;
@@ -75,6 +70,7 @@ export default function Main() {
                     font-weight:bold;
                     transition:all .3s;
                     cursor:pointer;
+                    color:black;
                 }
 
                 .about_us:hover {

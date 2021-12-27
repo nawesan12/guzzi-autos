@@ -5,7 +5,7 @@ export default function Main() {
         <>
             <section className="contacto_main">
                 <section className="contact_ways">
-                    <a className="contact" href="https://api.whatsapp.com/send?phone=+542235254339&text=Hola%20Ricardo!%20Queria%20hacerte%20una%20consulta.">
+                    <a className="contact" href="https://api.whatsapp.com/send?phone=+542235254339&text=Hola%20Ricardo!%20Queria%20hacerte%20una%20consulta." target="_blank" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" className="whatsapp icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
@@ -13,14 +13,14 @@ export default function Main() {
                         </svg>
                         <span className="link whatsapp">Enviar Mensaje</span>
                     </a>
-                    <a className="contact" href="callto:+542235254339">
+                    <a className="contact" href="callto:+542235254339" target="_blank" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" className="llamar icon icon-tabler icon-tabler-phone" width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
                         </svg>
                         <span className="link llamar">Llamar</span>
                     </a>
-                    <a className="contact" href="https://www.instagram.com/guzziautos">
+                    <a className="contact" href="https://www.instagram.com/guzziautos" target="_blank" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" className="instagram icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -29,7 +29,7 @@ export default function Main() {
                         </svg>     
                         <span className="link instagram">Instagram</span>
                     </a>
-                    <a className="contact" href="https://www.facebook.com/Guzzi-Autos-112314927616800/?ref=page_internal">
+                    <a className="contact" href="https://www.facebook.com/Guzzi-Autos-112314927616800/?ref=page_internal" target="_blank" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" className="facebook icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
