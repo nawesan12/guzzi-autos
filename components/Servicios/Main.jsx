@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Main() {
     return(
         <>
@@ -15,6 +17,14 @@ export default function Main() {
             </svg>
         </section>
         <section className="service_presentation"/>
+        <section className="payways">
+            <div className="payway">
+                <Image src="/images/payway/mercadopago.jpg" alt="Mercado Pago" layout="fill" object-fit="cover"/>
+            </div>
+            <div className="payway">
+                <Image src="/images/payway/cuentadni.jpg" alt="Cuebta Dni" layout="fill" object-fit="cover"/>
+            </div>
+        </section>
         <style jsx>{`
             .service_presentation {
                 width:100vw;
@@ -73,6 +83,21 @@ export default function Main() {
                 width:100vw;
                 height:10vh;
                 background: linear-gradient(0deg, #292929 40%, rgba(41,41,41,0.5) 70%, rgba(0,0,0,0) 100%);
+            }
+
+            .payways {
+                display:flex;
+                justify-content: space-around;
+                align-items:center;
+                margin-top:2rem;
+            }
+
+            .payway {
+                position:relative;
+                width:40%;
+                height:5.5rem;
+                overflow:hidden;
+                border-radius:10%;
             }
 
             @keyframes bouncing {

@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import Main from '../../components/Clientes/Main'
+
 export default function Clientes() {
     return(
         <>
@@ -8,7 +10,21 @@ export default function Clientes() {
         <meta name="description" content="Pagina web para Guzzi Autos" />
         <link rel="icon" href="/images/car.ico" />
         </Head>
-        <p>Clientes</p>
+        <section className="clientes_bg">
+            <Main />
+        </section>
+        <style jsx>{`
+            .clientes_bg {
+                height:80vh;
+                width:100vw;
+                background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;
+                background-size:cover;
+                filter: brightness(0.4);
+                position:relative;
+                z-index:0;
+                overflow-y:scroll;
+            }
+        `}</style>
         </>
     )
 } 

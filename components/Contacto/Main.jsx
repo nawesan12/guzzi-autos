@@ -3,6 +3,7 @@ import Image from 'next/image';
 export default function Main() {
     return(
         <>
+            <section className="contact_bg"/>
             <section className="contacto_main">
                 <section className="contact_ways">
                     <a className="contact" href="https://api.whatsapp.com/send?phone=+542235254339&text=Hola%20Ricardo!%20Queria%20hacerte%20una%20consulta." target="_blank" rel="noreferrer">
@@ -37,19 +38,29 @@ export default function Main() {
                         <span className="link facebook" style={{color:'white'}}>Facebook</span>
                     </a>
                 </section>
-                <section className="map">
-                    <Image src="/images/zona.png" alt="Zona de Guzzi Autos" layout="fill" object-fit="cover"/>
-                </section>
             </section>
             <style jsx>{`
                 .contacto_main {
-                    height:80vh;
                     width:100vw;
-                    background:#292929;
                     color:#f5f5f5;
                 }
 
+                .contact_bg {
+                    height:80vh;
+                    width:100vw;
+                    color:#f5f5f5;
+                    background:url('https://data.whicdn.com/images/101706752/original.gif') no-repeat center center;
+                    /*background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;*/
+                    background-size:cover;
+                    filter: brightness(0.4);
+                    position:relative;
+                    z-index:0;
+                }
+
                 .contact_ways {
+                    position:absolute;
+                    z-index:1;
+                    top:10vh;
                     display:flex;
                     justify-content:center;
                     align-items:center;
