@@ -67,6 +67,26 @@ export default function Benefits() {
                     padding:0 4rem;
                     font-weight:bold;
                 }
+
+                @media screen and (min-width:1200px) {
+                    .benefits {
+                        width:90vw;
+                        margin:auto;
+                        flex-direction:row;
+                        justify-content:space-evenly;
+                    }
+
+                    .benefit {
+                        display:flex;
+                        flex-direction:column;
+                        align-items:center;
+                        justify-content:flex-start;
+                    }
+
+                    .description {
+                        padding:1rem;
+                    }
+                }
             `}</style>
         </section>
     )

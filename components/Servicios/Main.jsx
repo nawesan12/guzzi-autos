@@ -100,6 +100,13 @@ export default function Main() {
                 border-radius:10%;
             }
 
+            @media screen and (min-width:1200px) {
+                .payways {
+                    width:60vw;
+                    margin:10vh auto 5vh;
+                }
+            }
+
             @keyframes bouncing {
                 0% {
                     animation-timing-function: ease-in;
@@ -144,7 +151,21 @@ export default function Main() {
                     opacity: 1;
                     transform: translateY(0px);
                 }
+            }
+
+            @media screen and (min-width:1200px) {
+                .service_presentation {
+                width:100vw;
+                height:100vh;
+                background:url('https://c.tenor.com/D2uwRaKO_2AAAAAC/audi-automobile-manufacturer.gif') no-repeat center;
+                /*background:url('https://data.whicdn.com/images/101706752/original.gif') no-repeat center center;*/
+                /*background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;*/
+                background-size:cover;
+                filter: brightness(0.4);
+                position:relative;
+                z-index:0;
                 }
+            }
         `}</style>
         </>
     )

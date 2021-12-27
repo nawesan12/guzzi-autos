@@ -88,8 +88,16 @@ export default function Servicio(props) {
                 .svgactive {
                     transform: rotate(180deg);
                 }
+
+                @media screen and (min-width:1200px) {
+                    .service {
+                        width:60vw;
+                        margin:auto;
+                    }
+                }
             `}</style>
         </>
     )
 }
 
+ 
