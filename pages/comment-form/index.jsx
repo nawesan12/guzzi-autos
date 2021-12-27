@@ -1,21 +1,20 @@
+import { addDoc, collection } from 'firebase/firestore';
+import db from '../../database/firebase'
 import Head from 'next/head'
 import { useState } from 'react'
 
 export default function CommentForm() {
 
-    const [data, setData] = useState({email: '', name: '', comment: '' });    
+    const [data, setData] = useState({email: '', name: '', comment: '', createdAt: new Date().toLocaleDateString() });    
 
-    const enviarDatos = async () => {
-        if (data.email === '' || data.name === '' || data.comment === '') {
-            alert('Todos los campos son obligatorios')
+    const enviarDatos = async () => { 
+        if(data.email == '' || data.name == '' || data.comment == '') {
+            alert('Todos los campos son obligatorios!')
         } else {
-        const request = await fetch('http://localhost:3000/api/comments', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        })}
+            await addDoc(collection(db, 'comments'), data)
+            console.log("El documento fue subido exitosamente!")
+        }
+        
     }
 
     const handleChangeText = (name, event) => {
