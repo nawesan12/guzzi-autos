@@ -118,6 +118,19 @@ export default function Main() {
                 .facebook {
                     background:#2222bb;
                 }
+
+                @media screen and (min-width:1200px) {
+                    .contact_bg {
+                        background-position:bottom;
+                    }
+
+                    .contact_ways {
+                        left:50%;
+                        bottom:50%;
+                        transform: translate(-50%, 50%);
+                        width:100vw;
+                    }
+                }
             `}</style>
         </>
     )
