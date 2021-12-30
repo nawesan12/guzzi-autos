@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Main from '../../components/Ventas/Main'
+import Presentacion from '../../components/Ventas/Presentacion'
 
 export default function Ventas() {
     return(
@@ -10,16 +11,16 @@ export default function Ventas() {
         <link rel="icon" href="/images/car.ico" />
         </Head>
         <section className="ventas_container">
+            <Presentacion />
             <Main />
         </section>
         <style jsx>{`
             .ventas_container {
                 height:80vh;
                 width:100vw;
-                background:url('https://c.tenor.com/5wo1KP_631sAAAAC/mclaren-racing.gif') no-repeat center;
-                background-size:cover;
                 overflow-y:scroll;
                 position:relative;
+                overflow-x:hidden;
             }
         `}</style>
         </>
