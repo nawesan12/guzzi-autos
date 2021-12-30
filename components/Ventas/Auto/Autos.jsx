@@ -1,11 +1,13 @@
 import db from '../../../database/firebase'
 import { getDocs, collection } from 'firebase/firestore'
-import Auto from './Auto'
 import { useState, useEffect } from 'react'
 
-export default function Autos(){
+import Auto from './Auto'
+
+export default function Autos(props){
 
     const [autos, setAutos] = useState([])
+    const [query, setQuery] = useState([])
 
     useEffect(() => {
         const getAutos = async () => {
@@ -22,10 +24,26 @@ export default function Autos(){
         getAutos()
     }, [])
 
+    const handleQueryText = (event) => {
+        setQuery(event.target.value)
+        console.log(query)
+    }
+
     return(
-        <section className="autos_container">
+        <>
+        <section className="autos_container" style={{background:'#292929'}}>
+            <input type="text" onChange={(value) => handleQueryText(value)} className="search_bar" placeholder="Buscar..."/>
             {
-                autos.map((auto, index) => (
+                autos.filter(auto => {
+                    if(query === "") {
+                        return auto;
+                    } else if(auto.modelo.toLowerCase().includes(query.toString().toLowerCase()) ||
+                              auto.marca.toLowerCase().includes(query.toString().toLowerCase()) ||
+                              auto.age.toString().toLowerCase().includes(query.toString().toLowerCase())
+                    ) {
+                        return auto;
+                    }
+                }).map((auto, index) => (
                     <Auto 
                         key={index}
                         id={auto.id}
@@ -45,5 +63,24 @@ export default function Autos(){
                 ))
             }           
         </section>
+        <style jsx>{`
+            .search_bar {
+                position:sticky;
+                height:3rem;
+                width:10rem;
+                border-radius:0 1rem 1rem 0;
+                top:10vh;
+                right:0;
+                z-index:10;
+                padding:1rem .5rem;
+                transition:all .3s ease;
+                transform:translateX(-70%)
+            }
+
+            .search_bar:focus {
+                transform:translateX(0%)
+            }
+        `}</style>
+        </>
     )
 }
