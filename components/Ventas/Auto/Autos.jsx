@@ -63,9 +63,13 @@ export default function Autos(props){
                         vtv_approved={auto.vtv_approved}
                         plate={auto.plate}
                         papeles_al_dia={auto.papeles_al_dia}
-                        detalles_motor={auto.detalles_motor}
+                        caracteristicas={auto.caracteristicas}
                         manual={auto.manual}
+                        motor={auto.motor}
+                        naftero={auto.naftero}
                         titular={auto.titular}
+                        kilometraje={auto.kilometraje}
+                        color={auto.color}
                     />
                 ))
             }           

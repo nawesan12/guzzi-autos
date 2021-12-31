@@ -1,13 +1,19 @@
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import { useState } from 'react'
+
+import AutoSinglePage from './AutoSinglePage'
 
 export default function Auto(props) {
+    
+    const [openCar, setOpenCar] = useState(false)
 
-    const router = useRouter()
+    const cerrarCar = () => {
+        setOpenCar(false)
+    }
 
     return(
         <> 
-        <article className="auto" onClick={() => router.push('/ventas/:id')}>
+        <article className="auto" onClick={() => setOpenCar(true)}>
             <div className="auto_photo">
                 <Image src="https://picsum.photos/300/300" alt={props.name + props.description} layout="fill" object-fit="cover" />
             </div>
@@ -18,6 +24,28 @@ export default function Auto(props) {
                 <p className="auto_price">${props.price}</p>
             </div>
         </article>
+        <AutoSinglePage
+            key={props.id}
+            id={props.id}
+            marca={props.marca}
+            modelo={props.modelo}
+            age={props.age}
+            description={props.description}
+            price={props.price}
+            usado={props.usado}
+            vtv_approved={props.vtv_approved}
+            plate={props.plate}
+            papeles_al_dia={props.papeles_al_dia}
+            caracteristicas={props.caracteristicas}
+            manual={props.manual}
+            motor={props.motor}
+            naftero={props.naftero}
+            titular={props.titular}
+            kilometraje={props.kilometraje}
+            color={props.color}
+            display={openCar === true ? "block" : "none"}
+            volver={() => cerrarCar()}
+        />
         <style jsx>{`
             .auto {
                 width:90vw;
