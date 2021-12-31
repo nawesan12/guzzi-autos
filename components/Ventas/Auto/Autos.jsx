@@ -15,8 +15,8 @@ export default function Autos(props){
             const autos = []
 
             auto.forEach((doc) => {
-                const { id, marca, modelo, age, description, price, usado, vtv_approved, plate, papeles_al_dia, detalles_motor, manual, titular } = doc.data()
-                autos.push({ id, marca, modelo, age, description, price, usado, vtv_approved, plate, papeles_al_dia, detalles_motor, manual, titular }) 
+                const { id, marca, modelo, age, description, price, usado, vtv_approved, plate, papeles_al_dia, motor, manual, titular, kilometraje, naftero, color, caracteristicas } = doc.data()
+                autos.push({ id, marca, modelo, age, description, price, usado, vtv_approved, plate, papeles_al_dia, motor, manual, titular, kilometraje, naftero, color, caracteristicas }) 
             })
             setAutos(autos)
             console.log(autos)
@@ -31,7 +31,7 @@ export default function Autos(props){
 
     return(
         <>
-        <section className="autos_container" style={{background:'#292929'}}>
+        <section className="autos_container" style={{background:'#292929', padding:'1rem 0'}}>
             <input type="text" onChange={(value) => handleQueryText(value)} className="search_bar" placeholder="Buscar..."/>
             {
                 autos.filter(auto => {
@@ -69,7 +69,7 @@ export default function Autos(props){
                 height:3rem;
                 width:10rem;
                 border-radius:0 1rem 1rem 0;
-                top:10vh;
+                top:5vh;
                 right:0;
                 z-index:10;
                 padding:1rem .5rem;

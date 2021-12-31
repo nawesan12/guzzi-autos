@@ -20,7 +20,7 @@ export default function Auto(props) {
             .auto {
                 width:90vw;
                 height:25rem;
-                background:white;
+                background:rgba(255,255,255,0.8);
                 margin: 2.5vh auto;
                 border-radius:.3rem;
             }
@@ -28,7 +28,6 @@ export default function Auto(props) {
             .auto_photo {
                 height:60%;
                 position:relative;
-                text-align:center;
                 margin:.5rem;
             }    
 
@@ -45,7 +44,7 @@ export default function Auto(props) {
             .auto_description {
                 padding:0 1rem;
                 width:90%;
-                margin:auto;
+                text-align:left;
             }
 
             .auto_price {
