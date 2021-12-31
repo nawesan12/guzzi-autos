@@ -12,17 +12,19 @@ export default function Auto(props) {
                 <Image src="https://picsum.photos/300/300" alt={props.name + props.description} layout="fill" object-fit="cover" />
             </div>
             <h4 className="auto_name">{props.modelo + ' ' + props.marca}<span>{props.age}</span></h4>
-            <span className="auto_description">{props.description.split('', 80)}...</span>
-            <p className="auto_manual">{props.manual === true ? "Manual" : "Automatico"}</p>
-            <p className="auto_price">{props.price}</p>
+            <p className="auto_description">{props.description.split('', 120)}...</p>
+            <div className="bottom">
+                <p className="auto_manual">{props.manual === true ? "Manual" : "Automatico"}</p>
+                <p className="auto_price">${props.price}</p>
+            </div>
         </article>
         <style jsx>{`
             .auto {
                 width:90vw;
                 height:25rem;
-                background:rgba(255,255,255,0.8);
+                background:#eee;
                 margin: 2.5vh auto;
-                border-radius:.3rem;
+                border-radius:.5rem;
             }
 
             .auto_photo {
@@ -42,25 +44,33 @@ export default function Auto(props) {
             }
 
             .auto_description {
-                padding:0 1rem;
+                padding:0 .5rem 0 1rem;
+                margin:0;
                 width:90%;
                 text-align:left;
+                color:#555;
+            }
+
+            .bottom {
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
             }
 
             .auto_price {
-                float:right;
                 color:#292929;
                 font-size:1.1rem;
                 padding:0 1rem;
-                display:inline-block;
+                font-weight:bold;
+                /*background:lightgreen;*/
             }
 
             .auto_manual {
-                float:left;
                 color:#292929;
                 font-size:1.1rem;
-                padding:0 1rem;
-                display:inline-block;
+                /*background:#802020;
+                color:#eee;*/
+                font-weight:bold;
             }
         `}</style>
         </>

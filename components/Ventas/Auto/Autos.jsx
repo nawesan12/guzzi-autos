@@ -32,7 +32,14 @@ export default function Autos(props){
     return(
         <>
         <section className="autos_container" style={{background:'#292929', padding:'1rem 0'}}>
-            <input type="text" onChange={(value) => handleQueryText(value)} className="search_bar" placeholder="Buscar..."/>
+            <div className="search">
+                <input type="text" onChange={(value) => handleQueryText(value)} className="search_bar" placeholder="Buscar..."/>
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+            </div>
             {
                 autos.filter(auto => {
                     if(query === "") {
@@ -64,20 +71,35 @@ export default function Autos(props){
             }           
         </section>
         <style jsx>{`
-            .search_bar {
+            .search {
                 position:sticky;
                 height:3rem;
-                width:10rem;
+                width:12.5rem;
                 border-radius:0 1rem 1rem 0;
                 top:5vh;
                 right:0;
                 z-index:10;
-                padding:1rem .5rem;
                 transition:all .3s ease;
-                transform:translateX(-70%)
+                transform:translateX(-85%);
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                background:white;
+                border:2px solid black;
             }
 
-            .search_bar:focus {
+            svg {
+                position:relative;
+            }
+
+            .search_bar {
+                height:3rem;
+                width:10rem;
+                border-radius:0 1rem 1rem 0;
+                padding:1rem .5rem;
+            }
+
+            .search:focus-within {
                 transform:translateX(0%)
             }
         `}</style>
