@@ -85,7 +85,17 @@ export default function AutoSinglePage(props) {
                 </div>
             </main>
             <footer>
-
+                <a href={`https://api.whatsapp.com/send?phone=542235254339&text=Hola%20Ricardo!%20Me%20interesa%20el%20auto%20${props.modelo}%20${props.marca}%20${props.age}`}><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-coin" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                    <path d="M12 6v2m0 8v2" />
+                </svg>COMPRAR<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-car" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="7" cy="17" r="2" />
+                    <circle cx="17" cy="17" r="2" />
+                    <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+                </svg></a>
             </footer>
         </section>
         <style jsx>{`
@@ -113,6 +123,7 @@ export default function AutoSinglePage(props) {
                 display:block;
                 height:30vh;
                 width:90vw;
+                position:relative;
                 margin:auto;
                 background:#292929;
             }
@@ -131,6 +142,10 @@ export default function AutoSinglePage(props) {
                 padding:0 1rem;
             }
 
+            .description:first-letter {
+                text-transform:capitalize;
+            }
+
             ul {
                 margin-left:-1rem;
             }
@@ -147,6 +162,27 @@ export default function AutoSinglePage(props) {
 
             svg {
                 margin-right:.5rem;
+            }
+
+            footer {
+                height:15vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+
+            footer a {
+                padding:1rem 2rem;
+                color:#f5f5f5;
+                background:#802020;
+                display:flex;
+                align-items:center;
+                font-weight:bold;
+                font-size:1.2rem;
+            }
+
+            footer svg {
+                margin:0 .5rem;
             }
         `}</style>
         </>    
