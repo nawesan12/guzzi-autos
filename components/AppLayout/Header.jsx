@@ -35,6 +35,9 @@ export default function Header(){
                     <li className="nav_link ventas" onClick={() => hideNav()}>
                         <Link href="/ventas"><a title="Tenemos el usado que buscas">Ventas</a></Link>
                     </li>
+                    <li className="nav_link ventas" onClick={() => hideNav()}>
+                        <Link href="/tienda"><a title="Compra nuestros productos!">Tienda</a></Link>
+                    </li>
                 </div>
 
             <span className="burger" onClick={() => setIsOpen(!isOpen)}>

@@ -85,7 +85,7 @@ export default function AutoSinglePage(props) {
                 </div>
             </main>
             <footer>
-                <a href={`https://api.whatsapp.com/send?phone=542235254339&text=Hola%20Ricardo!%20Me%20interesa%20el%20auto%20${props.modelo}%20${props.marca}%20${props.age}`}><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-coin" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <a href={`https://api.whatsapp.com/send?phone=542235254339&text=Hola%20Ricardo!%20Me%20interesa%20el%20auto%20${props.modelo}%20${props.marca}%20${props.age}`} target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-coin" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <circle cx="12" cy="12" r="9" />
                     <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
@@ -117,6 +117,12 @@ export default function AutoSinglePage(props) {
                 padding:1rem;
                 font-weight:bold;
                 font-size:1.1rem;
+                text-transform:capitalize;
+            }
+
+            header span {
+                display:flex;
+                align-items:center;
             }
 
             .carrousel {
