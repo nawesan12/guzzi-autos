@@ -100,6 +100,14 @@ export default function Auto(props) {
                 color:#eee;*/
                 font-weight:bold;
             }
+
+            @media screen and (min-width:1200px) {
+                .auto {
+                    width:20vw;
+                    height:27rem;
+                    flex-wrap:wrap;
+                }
+            }
         `}</style>
         </>
     )
