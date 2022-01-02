@@ -102,7 +102,7 @@ export default function Main() {
 
             @media screen and (min-width:1200px) {
                 .payways {
-                    width:60vw;
+                    width:30vw;
                     margin:10vh auto 5vh;
                 }
             }
