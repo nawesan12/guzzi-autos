@@ -29,7 +29,7 @@ export default function Main() {
             .service_presentation {
                 width:100vw;
                 height:100vh;
-                background:url('https://i.pinimg.com/originals/05/8a/a6/058aa6c4447a0daf717b7845f09d42c4.gif') no-repeat;
+                background:url('/images/backgrounds/servicios.gif') no-repeat;
                 /*background:url('https://data.whicdn.com/images/101706752/original.gif') no-repeat center center;*/
                 /*background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;*/
                 background-size:cover;
@@ -157,7 +157,7 @@ export default function Main() {
                 .service_presentation {
                 width:100vw;
                 height:100vh;
-                background:url('https://c.tenor.com/D2uwRaKO_2AAAAAC/audi-automobile-manufacturer.gif') no-repeat center;
+                background:url('/images/backgrounds/servicios2.gif') no-repeat center;
                 /*background:url('https://data.whicdn.com/images/101706752/original.gif') no-repeat center center;*/
                 /*background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;*/
                 background-size:cover;

@@ -49,7 +49,7 @@ export default function Main() {
                     height:80vh;
                     width:100vw;
                     color:#f5f5f5;
-                    background:url('https://data.whicdn.com/images/101706752/original.gif') no-repeat center center;
+                    background:url('/images/backgrounds/contacto.gif') no-repeat center center;
                     /*background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;*/
                     background-size:cover;
                     filter: brightness(0.4);
