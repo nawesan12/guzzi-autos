@@ -34,11 +34,13 @@ export default function Autos(props){
         <section className="autos_container" style={{background:'#292929', padding:'1rem 0'}}>
             <div className="search">
                 <input type="text" onChange={(value) => handleQueryText(value)} className="search_bar" placeholder="Buscar..."/>
+                <button>
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <circle cx="10" cy="10" r="7" />
                     <line x1="21" y1="21" x2="15" y2="15" />
                 </svg>
+                </button>
             </div>
             {
                 autos.filter(auto => {
@@ -101,6 +103,15 @@ export default function Autos(props){
                 width:10rem;
                 border-radius:0 1rem 1rem 0;
                 padding:1rem .5rem;
+                border:none;
+            }
+
+            button {
+                border:none;outline:none;background:none;
+            }
+
+            button:focus {
+                border:none;outline:none;background:none;
             }
 
             .search:focus-within {
