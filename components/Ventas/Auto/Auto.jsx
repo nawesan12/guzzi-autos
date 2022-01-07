@@ -53,6 +53,7 @@ export default function Auto(props) {
                 background:#eee;
                 margin: 2.5vh auto;
                 border-radius:.5rem;
+                cursor:pointer;
             }
 
             .auto_photo {
