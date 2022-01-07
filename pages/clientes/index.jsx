@@ -23,7 +23,7 @@ export default function Clientes() {
             .clientes_bg {
                 height:80vh;
                 width:100vw;
-                background:url('https://c.tenor.com/YuWg88xZWTgAAAAC/audi-r8.gif') no-repeat center center;
+                background:url('/images/backgrounds/clientes.gif') no-repeat center center;
                 background-size:cover;
                 position:relative;
                 z-index:0;

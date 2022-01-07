@@ -136,6 +136,7 @@ export default function AutoSinglePage(props) {
 
             .car_name {
                 padding:0 1rem;
+                text-transform:capitalize;
             }
 
             .price {
@@ -189,6 +190,44 @@ export default function AutoSinglePage(props) {
 
             footer svg {
                 margin:0 .5rem;
+            }
+
+            @media screen and (min-width:1200px) {
+                .carrousel {
+                    width:60vw;
+                    margin:auto;
+                }
+
+                .car_name {
+                    width:60vw;
+                    margin:1rem auto;
+                    text-transform:capitalize;
+                }
+
+                .price {
+                    padding:0 1rem;
+                    font-weight:bold;
+                    font-size:1.5rem;
+                    display:block;
+                    width:60vw;
+                    margin:auto;
+                }
+
+                .description {
+                    padding:0 1rem;
+                    width:60vw;
+                    margin:1rem auto;
+                }
+
+                ul {
+                    width:60vw;
+                    margin:auto;
+                }
+
+                li {
+                    margin:1rem auto;
+                    padding:2.5rem auto;
+                }
             }
         `}</style>
         </>    

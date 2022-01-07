@@ -91,7 +91,7 @@ export default function Servicio(props) {
 
                 @media screen and (min-width:1200px) {
                     .service {
-                        width:60vw;
+                        width:50vw;
                         margin:auto;
                     }
                 }

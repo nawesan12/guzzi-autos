@@ -23,7 +23,7 @@ export default function Presentacion() {
                 justify-content:space-evenly;
                 align-items:center;
                 flex-direction:column;
-                background:url('https://monophy.com/media/jtbfEofwMbVrG/monophy.gif') no-repeat left;
+                background:url('/images/backgrounds/ventas.gif') no-repeat left;
                 background-size:cover;
                 text-align:center;
                 padding:1rem;
