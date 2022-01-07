@@ -15,9 +15,9 @@ export default function Auto(props) {
         <> 
         <article className="auto" onClick={() => setOpenCar(true)}>
             <div className="auto_photo">
-                <Image src="https://picsum.photos/300/300" alt={props.name + props.description} layout="fill" object-fit="cover" />
+                <Image src="https://picsum.photos/300/300" alt={props.name + props.description + 'Guzzi Autos'} layout="fill" object-fit="cover" />
             </div>
-            <h4 className="auto_name">{props.modelo + ' ' + props.marca}<span>{props.age}</span></h4>
+            <h4 className="auto_name">{props.modelo + ' ' + props.marca}<span>{props.age.toString()}</span></h4>
             <p className="auto_description">{props.description.split('', 120)}...</p>
             <div className="bottom">
                 <p className="auto_manual">{props.manual === true ? "Manual" : "Automatico"}</p>
