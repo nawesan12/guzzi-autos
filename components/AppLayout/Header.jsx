@@ -82,7 +82,7 @@ export default function Header(){
             .nav_logo {
                 position:relative;
                 height:60%;
-                width:8rem;
+                min-width:10rem;
             }
 
             .nav_list {
