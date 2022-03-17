@@ -58,64 +58,7 @@ export default function Benefits() {
             </article>
 
             <style jsx>{`
-                .benefits {
-                    display:flex;
-                    flex-direction:column;
-                    align-items:center;
-                }
-
-                .benefit {
-                    margin:2rem 0;
-                }
-
-                .svgphoto {
-                    position:relative;
-                    display:block;
-                    margin:auto;
-                    width: 6rem;
-                    height:6rem;
-                }    
-
-                .benefit .title {
-                    margin:0;
-                    text-align:center;
-                    font-size:1.2rem;
-                    font-weight:bold;
-                    color:#eee;
-                    text-decoration:underline solid #802020;
-                }
-
-                .description {
-                    text-align:left;
-                    color:#ccc;
-                    font-size:1.1rem;
-                    padding:0 4rem;
-                    font-weight:bold;
-                }
-
-                .description li {
-                    list-style-type: none;
-                }
-
-                @media screen and (min-width:1200px) {
-                    .benefits {
-                        width:90vw;
-                        margin:auto;
-                        flex-direction:row;
-                        justify-content:space-evenly;
-                    }
-
-                    .benefit {
-                        display:flex;
-                        flex-direction:column;
-                        align-items:center;
-                        justify-content:flex-start;
-                    }
-
-                    .description {
-                        padding:1rem;
-                    }
-                }
+                
             `}</style>
         </section>
     )

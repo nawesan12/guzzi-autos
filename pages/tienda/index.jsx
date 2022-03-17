@@ -15,37 +15,10 @@ export default function Tienda() {
         <meta name="description" content="Pagina web para Guzzi Autos" />
         <link rel="icon" href="/images/car.ico" />
         </Head>
-        <section>
-            <h1>PROXIMAMENTE</h1>
-            <div>
-                <Image src="/images/proximamente.svg" alt="Proximamente Guzzi Autos Tienda" layout="fill" object-fit="cover"/>
-            </div>
-        </section>
-
-        <style jsx>{`
-            section {
-                display:flex;
-                align-items:center;
-                justify-content:space-between;
-                height:80vh;
-                width:100vw;
-                flex-direction:column;
-            }    
-
-            div {
-                position:relative;
-                width:85vw;
-                height:85vw;
-            }
-
-            h1 {
-                font-size:1.8rem;
-                margin-top:25vh;
-                padding:1rem;
-                border:5px dashed black;
-                border-radius:.5rem;
-            }
-        `}</style>
+        
+        <h1>
+            Proximamante
+        </h1>
         </>
     )
 }   
