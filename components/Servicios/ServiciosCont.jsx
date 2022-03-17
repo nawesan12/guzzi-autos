@@ -6,25 +6,25 @@ export default function ServiciosCont() {
     const servicios = [
         {
             title: 'Lavado Completo',
-            description: 'Lavamos enteramente su vehiculo para dejarlo en condiciones optimas! Sin perder ningun detalle, y dando la mejor entrega posible.',
+            description: 'Lavamos su vehiculo para dejarlo en condiciones optimas! Sin perder ningun detalle, y dando la mejor entrega posible.',
             image1: '/images/before-and-after/auto1.jpeg',
             image2: '/images/before-and-after/auto2.jpeg',
         },
         {
-            title: 'Lavado y Detallado de Motor',
-            description: 'Limpieza total y detallada de su motor, para que su interior quede en condiciones optimas! \n' + 'Beneficios: \n' + '-Mejor respiracion del motor \n' + '-Detectar perdidas de fluidos \n' + '-Limpiar fluidos de perdidas solucionadas \n' + '-Hidratacion de plasticas y mangueras maltratadas por suciedad y temperatura',
+            title: 'Lavado y Acondicionado de Motor',
+            description: 'Limpieza total y detallada de su motor para que quede en condiciones optimas! \n' + 'Beneficios: \n' + '-Mejor respiracion del motor \n' + '-Detectar perdidas de fluidos \n' + '-Limpieza de fluidos de perdidas solucionadas \n' + '-Hidratacion de plasticas y mangueras maltratadas por suciedad y temperatura',
             image1: '/images/before-and-after/motor4.jpeg',
             image2: '/images/before-and-after/motor6.jpeg',
         },
         {
-            title: 'Limpieza de llantas y pasaruedas',
-            description:'Lavado de llantas para dejarlas como recien compradas nuevamente Lavado de pasarruedas y mordazas de freno eliminando toda suciedad pegada',
+            title: 'Lavado y Acondicionado de llantas',
+            description:'Lavado de llantas para dejarlas como recien compradas',
             image1: '/images/before-and-after/ruedasola1.jpeg',
             image2: '/images/before-and-after/ruedasola2.jpeg',
         },
         {
             title: 'Limpieza de tapizados',
-            description:'Limpieza a fondo de su tapizado automotriz.',
+            description:'',
             image1: '/images/before-and-after/interioratras1.jpeg',
             image2: '/images/before-and-after/interioratras2.jpeg',
         },
@@ -36,13 +36,13 @@ export default function ServiciosCont() {
         },
         {
             title: 'Abrillantados',
-            description:'Abrillantamos su vehiculo dejandolo como nuevo!',
+            description:'Pulido y encerado en un solo paso',
             image1: '/images/before-and-after/auto1.jpeg',
             image2: '/images/before-and-after/auto2.jpeg',
         },
         {
             title: 'Pulido de optica',
-            description:'Pulido y limpieza de luces para una buena funcion de las mismas!',
+            description:'',
             image1: '/images/before-and-after/optica1.jpeg',
             image2: '/images/before-and-after/optica2.jpeg',
         },

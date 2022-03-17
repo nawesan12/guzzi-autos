@@ -4,7 +4,7 @@ export default function Presentacion() {
         <section className="presentacion">
             <div>
                 <h1 className="title">Ventas</h1>
-                <p>Autos de todo tipo</p>
+                <p>Vehiculos de todo tipo</p>
                 <h3 className="lema">Tenemos el usado que buscas</h3>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevrons-down" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">

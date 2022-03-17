@@ -6,7 +6,6 @@ export default function Main() {
         <section className="presentation_text">
             <div>
                 <h1>Servicios</h1>
-                <p>De la mejor calidad</p>
                 <h3>Tenemos lo que tu vehiculo necesita</h3>
             </div>
 

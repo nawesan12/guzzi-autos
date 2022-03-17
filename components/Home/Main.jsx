@@ -12,7 +12,7 @@ export default function Main() {
             <section className="presentation">
                 <p className="welcome">Bienvenidos a</p>
                 <h1 className="titulo">Guzzi Autos</h1>
-                <p className="phrase">Mantenimiento, limpieza y ventas!</p>
+                <p className="phrase">Tenemos todo lo que tu vehiculo necesita!</p>
                 <button className="about_us" onClick={() => router.push('/servicios')}>Sobre nosotros</button>
             </section>
             <style jsx>{`
