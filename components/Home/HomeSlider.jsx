@@ -52,9 +52,9 @@ export default function HomeSlider() {
             </section>
 
             <section className="dots">
-                    <div className={slide == 0 ? "dot active-dot" : "dot"}/>
-                    <div className={slide == 1 ? "dot active-dot" : "dot"}/>
-                    <div className={slide == 2 ? "dot active-dot" : "dot"}/>
+                <button className={slide == 0 ? "dot active-dot" : "dot"}/>
+                <button className={slide == 1 ? "dot active-dot" : "dot"}/>
+                <button className={slide == 2 ? "dot active-dot" : "dot"}/>
             </section>
         </section>
 
@@ -78,11 +78,11 @@ export default function HomeSlider() {
             }
 
             .slide-two {
-                background:url('/images/backgrounds/home.webp') no-repeat top center;
+                background:url('/images/backgrounds/home2.jpg') no-repeat top center;
             }
 
             .slide-three {
-                background:url('/images/backgrounds/home.webp') no-repeat top center;
+                background:url('/images/backgrounds/home3.jpg') no-repeat;
             }
 
             .centered {
@@ -118,6 +118,7 @@ export default function HomeSlider() {
 
             .dots {
                 position:absolute;  
+                z-index:8;
                 bottom:0;
                 left:0;
                 width:100%;
