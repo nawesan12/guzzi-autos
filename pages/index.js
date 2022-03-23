@@ -9,7 +9,7 @@ export default function Home() {
           <html lang="es" />
           <title>Guzzi Autos</title>
           <meta name="description" content="Pagina web para Guzzi Autos" />
-          <link rel="icon" href="/images/car.ico" />
+          <link rel="icon" href="/favicon.ico" />
           <meta charset="utf-8"/>
           <meta name="robots" content="index"/>
           <meta name="description" content="Somos una empresa dedicada a la limpieza, mantenimiento y venta de automoviles! No dudes en consultarnos. Guzzi Autos."/>

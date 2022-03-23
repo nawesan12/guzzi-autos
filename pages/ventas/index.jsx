@@ -14,7 +14,7 @@ export default function Ventas() {
             <meta name="author" content="Nahuel Santillan Web Developer" />
             <meta name="copyright" content="Ricardo Guzzi - Guzzi Autos" />
             <meta name="description" content="Pagina web para Guzzi Autos" />
-            <link rel="icon" href="/images/car.ico" />
+            <link rel="icon" href="/favicon.ico" />
         </Head>
         
         <Main />
