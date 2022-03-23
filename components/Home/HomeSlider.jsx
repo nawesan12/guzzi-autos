@@ -1,32 +1,28 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function HomeSlider() {
 
-    const [slide, setSlide] = useState(1)
-    const [slidePercentage, setSlidePercentage] = useState('0%')
+    const [slide, setSlide] = useState(0)
 
-    const slideForward = () => {
-        !slide === 3 ? setSlide(slide + 1) : setSlide(1)
-        setSlideShowing()
+    useEffect(() => {
+        setTimeout(nextSlide, 5000)
+        // eslint-disable-next-line
+    }, [slide])
+
+    const nextSlide = () => {
+        slide > 1 ? setSlide(0) : setSlide(slide + 1)
     }
 
-    const slideBackward = () => {
-        !slide === 1 ? setSlide(slide - 1) : setSlide(3)
-        setSlideShowing()
-    }
-
-    const setSlideShowing = () => {
-        slide === 1 ? setSlidePercentage('0%') : 
-        slide === 2 ? setSlidePercentage('-100%') : 
-        slide === 3 ? setSlidePercentage('-200%') : null
+    const prevSlide = () => {
+        slide === 0 ? setSlide(2) : setSlide(slide - 1)
     }
 
     return (
         <>
         <section className="home_slider">
             <section className="controllers">
-                <div className="arrowBack"/>
-                <div className="arrowForward"/>
+                <div className="arrowBack"></div>
+                <div className="arrowForward"></div>
             </section>
             <section className="slider">
                 <article className="slidupulis slide-one cover">
@@ -53,7 +49,7 @@ export default function HomeSlider() {
                 width:auto;
                 display:flex;
                 transition: all .3s ease;
-                transform: translateX(${slidePercentage});
+                transform: translateX(${slide * -100}%);
             }
 
             .slide-one {
