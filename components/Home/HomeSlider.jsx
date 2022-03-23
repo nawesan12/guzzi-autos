@@ -6,12 +6,12 @@ export default function HomeSlider() {
     const [slidePercentage, setSlidePercentage] = useState('0%')
 
     const slideForward = () => {
-        slide === 3 ? setSlide(1) : setSlide(slide + 1)
+        !slide === 3 ? setSlide(slide + 1) : setSlide(1)
         setSlideShowing()
     }
 
     const slideBackward = () => {
-        slide === 1 ? setSlide(3) : setSlide(slide - 1)
+        !slide === 1 ? setSlide(slide - 1) : setSlide(3)
         setSlideShowing()
     }
 
@@ -20,8 +20,6 @@ export default function HomeSlider() {
         slide === 2 ? setSlidePercentage('-100%') : 
         slide === 3 ? setSlidePercentage('-200%') : null
     }
-
-    setInterval(slideForward, 6000)
 
     return (
         <>
