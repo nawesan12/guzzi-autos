@@ -51,7 +51,7 @@ export default function Header() {
 
         <style jsx>{`
             .app_header {
-                height:26vh;
+                height:22vh;
                 width:100vw;
                 position:relative;
                 z-index:50;
