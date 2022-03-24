@@ -8,7 +8,6 @@ export default function ServicesGrid() {
                 <section className="bg-service-image">
                     <Image src="/images/backgrounds/abrillantados.jpg" alt="" layout="fill" objectFit="cover" />
                 </section>
-                <span></span>
                 <h4>Abrillantados</h4>
                 <span>Leer mas</span>
             </div>
@@ -47,7 +46,7 @@ export default function ServicesGrid() {
                 position:relative;
                 display:flex;
                 flex-direction:column;
-                justify-content:space-evenly;
+                justify-content:center;
                 align-items:center;
             }
 
@@ -57,7 +56,6 @@ export default function ServicesGrid() {
                 position:absolute;
                 top:0;
                 left:0;
-                filter: blur(1px);
             }
 
             h4 {
@@ -70,6 +68,10 @@ export default function ServicesGrid() {
             span {
                 position:relative;
                 z-index:1;
+                padding:.5rem 1rem;
+                border: 2px solid var(--primary-text);
+                border-radius:1rem;
+                font-weight:500;
             }
 
             .service:hover {
