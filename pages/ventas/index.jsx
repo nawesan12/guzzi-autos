@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Main from '../../components/Ventas/Main'
-import Presentacion from '../../components/Ventas/Presentacion'
 
 export default function Ventas() {
     return(
