@@ -78,10 +78,11 @@ export default function ServicesGrid() {
 
             @media screen and (max-width:1200px) {
                 .services_grid {
-                    height:130vh;
+                    height:145vh;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(7, 1fr);
-                    padding:1rem;
+                    padding:.5rem;
+                    gap: .5rem;
                 }
             }
         `}</style>
