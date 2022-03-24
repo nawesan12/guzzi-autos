@@ -82,6 +82,21 @@ export default function ServicesGallery() {
                 border-radius:1rem;
                 padding:.5rem 1rem;
             }
+
+            @media screen and (max-width:1200px) {
+                .services_gallery {
+                    height:auto;
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    gap:1rem;
+                }
+
+                .services_item {
+                    width:90vw;
+                    height:28vh;
+                }
+            }
        `}</style>
         </>
         

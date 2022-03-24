@@ -6,6 +6,7 @@ export default function Clientes() {
     return(
         <>
         <Head>
+            <html lang="es"/>
             <title>Guzzi Autos - Clientes</title>
             <meta charset="utf-8"/>
             <meta name="robots" content="index"/>
@@ -16,20 +17,8 @@ export default function Clientes() {
             <meta name="description" content="Pagina web para Guzzi Autos" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <section className="clientes_bg">
-            <Main />
-        </section>
-        <style jsx>{`
-            .clientes_bg {
-                height:80vh;
-                width:100vw;
-                background:url('/images/backgrounds/clientes.gif') no-repeat center center;
-                background-size:cover;
-                position:relative;
-                z-index:0;
-                overflow-y:scroll;
-            }
-        `}</style>
+
+        <Main />
         </>
     )
 } 

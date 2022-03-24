@@ -21,5 +21,3 @@ export default function Ventas() {
         </>
     )
 }
-
-// Ventas, consignaciones y si lo quieren vender te lo compramos. (Efectivo) Asesoramiento personalizado Financiaciones

@@ -7,6 +7,10 @@ export default function Header() {
 
     const [isOpen, setIsOpen] = useState(false)
 
+    const toggleNav = () => {
+        setIsOpen(!isOpen)
+    }
+
     const hideNav = () => {
         setIsOpen(false)
     }
@@ -17,7 +21,7 @@ export default function Header() {
             <section className="logo">
                 <Image src="/images/tarjeta.png" alt="Logo" layout='fill' objectFit="cover" />
             </section>
-            <nav className="navigation">
+            <nav className={isOpen === true ? "navigation active-menu" : "navigation"}>
                 <section className="list">
                     <li className="nav_item" onClick={hideNav}>
                         <Link href="/"><a>Inicio</a></Link>
@@ -38,8 +42,14 @@ export default function Header() {
                         <Link href="/tienda"><a>Tienda</a></Link>
                     </li>
                 </section>   
+
+                <section className="social-media">
+                    <div className="fb"><Image src="/images/icons/facebook.png" alt="" layout="fill" objectFit="cover"/></div>
+                    <div className="insta" ><Image src="/images/icons/instagram.png" alt="" layout="fill" objectFit="cover"/></div>
+                    <div className="wsp" ><Image src="/images/icons/whatsapp.png" alt="" layout="fill" objectFit="cover"/></div>
+                </section>
             </nav>
-            <section className="burger">
+            <section className="burger" onClick={toggleNav}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="" width="36" height="36" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#FFFFFF" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <line x1="4" y1="6" x2="20" y2="6" />
@@ -90,6 +100,10 @@ export default function Header() {
                 display:none;
             }
 
+            .social-media {
+                display:none;
+            }
+
             @media screen and (max-width:1200px) {
                 .app_header {
                     height:20vh;
@@ -101,6 +115,46 @@ export default function Header() {
 
                 .active-menu {
                     transform:translateX(0%);
+                }
+
+                .navigation {
+                    position:absolute;
+                    z-index:100;
+                    top:20vh;
+                    left:0;
+                    background:var(--primary);
+                    height:80vh;
+                    width:80vw;
+                    display:grid;
+                    place-items:center;
+                    transform: translateX(-110%);
+                    transition: all .2s ease;
+                }
+
+                .list {
+                    flex-direction:column;
+                }
+
+                .nav_item {
+                    margin:1rem 0;
+                }
+
+                .active-menu {
+                    transform: translateX(0%);
+                }
+                
+                .social-media {
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-evenly;
+                    width:100%;
+                }
+
+                .social-media div {
+                    height:2rem;
+                    width:2rem;
+                    margin:0 .5rem;
+                    position:relative;
                 }
             }
         `}</style>        
