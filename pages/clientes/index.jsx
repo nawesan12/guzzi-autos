@@ -6,7 +6,6 @@ export default function Clientes() {
     return(
         <>
         <Head>
-            <html lang="es"/>
             <title>Guzzi Autos - Clientes</title>
             <meta charset="utf-8"/>
             <meta name="robots" content="index"/>
@@ -22,5 +21,3 @@ export default function Clientes() {
         </>
     )
 } 
-
-// Separar por secciones

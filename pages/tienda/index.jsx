@@ -6,7 +6,6 @@ export default function Tienda() {
     return(
         <>
         <Head>
-            <html lang="es" />
             <title>Guzzi Autos - Tienda</title>
             <meta charset="utf-8"/>
             <meta name="description" content="Somos una empresa dedicada a la limpieza, mantenimiento y venta de automoviles! No dudes en consultarnos. Guzzi Autos."/>

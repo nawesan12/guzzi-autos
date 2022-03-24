@@ -5,7 +5,6 @@ export default function Ventas() {
     return(
         <>
         <Head>
-            <html lang="es" />
             <title>Guzzi Autos - Ventas</title>
             <meta charset="utf-8"/>
             <meta name="description" content="Somos una empresa dedicada a la limpieza, mantenimiento y venta de automoviles! No dudes en consultarnos. Guzzi Autos."/>

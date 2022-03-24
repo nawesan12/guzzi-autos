@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <>
       <Head>
-          <html lang="es" />
           <title>Guzzi Autos</title>
           <meta name="description" content="Pagina web para Guzzi Autos" />
           <link rel="icon" href="/favicon.ico" />
