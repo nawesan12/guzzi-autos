@@ -1,0 +1,92 @@
+[
+    {
+        "id":1,
+        "title": "Lavado completo",
+        "description": "",
+        "image": "/images/services/lavado-completo.jpg"
+    },
+    {
+        "id":2,
+        "title": "Lavado y acondicionado de motor",
+        "description": "",
+        "image": "/images/services/lavado-y-acondicionado-de-motor.jpg"
+    },
+    {
+        "id":3,
+        "title": "Lavado de llantas y pasarruedas",
+        "description": "",
+        "image": "/images/services/lavado-de-llantas.jpg"
+    },
+    {
+        "id":4,
+        "title": "Lavado de chasis",
+        "description": "",
+        "image": "/images/services/lavado-de-chasis.jpg"
+    },
+    {
+        "id":5,
+        "title": "Limpieza de tapizados",
+        "description": "",
+        "image": "/images/services/limpieza-de-tapizados.jpg"
+    },
+    {
+        "id":6,
+        "title": "Limpieza de interior completa",
+        "description": "",
+        "image": "/images/services/limpieza-interior.jpg"
+    },
+    {
+        "id":7,
+        "title": "Encerado",
+        "description": "",
+        "image": "/images/services/encerado.jpg"
+    },
+    {
+        "id":8,
+        "title": "Abrillantado",
+        "description": "",
+        "image": "/images/services/abrillantado.jpg"
+    },
+    {
+        "id":9,
+        "title": "Tratamientos",
+        "description": "",
+        "image": "/images/services/tratamientos.jpg"
+    },
+    {
+        "id":10,
+        "title": "Micropintura",
+        "description": "",
+        "image": "/images/services/micropintura.jpg"
+    },
+    {
+        "id":11,
+        "title": "Preparados para venta",
+        "description": "",
+        "image": "/images/services/preparado-para-venta.jpg"
+    },
+    {
+        "id":12,
+        "title": "Pintura en llantas",
+        "description": "",
+        "image": "/images/services/pintura-en-llanta.jpg"
+    },
+    {
+        "id":13,
+        "title": "Sacabollos",
+        "description": "",
+        "image": "/images/services/sacabollos.jpg"
+    },
+    {
+        "id":14,
+        "title": "Polarizado",
+        "description": "",
+        "image": "/images/services/polarizado.jpg"
+    },
+    {
+        "id":15,
+        "title": "Y otros mas...",
+        "description": "",
+        "image": "/images/services/otros-mas.jpg"
+    }
+]

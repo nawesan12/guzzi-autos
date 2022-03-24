@@ -1,30 +1,22 @@
-import Image from "next/image";
+import Image from "next/image"
+
+import services from './services.json'
 
 export default function ServicesGrid() {
     return (
         <>
         <section className="services_grid">
-            <div className="service">
-                <section className="bg-service-image">
-                    <Image src="/images/backgrounds/abrillantados.jpg" alt="" layout="fill" objectFit="cover" />
-                </section>
-                <h4>Abrillantados</h4>
-                <span>Leer mas</span>
-            </div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
-            <div className="service"></div>
+            {
+                services.map((service) => (
+                    <article className="service" key={service.id}>
+                        <section className="bg-service-image">
+                            {/*<Image src={service.image} alt={service.description} layout="fill" objectFit="cover" priority />*/}
+                        </section>
+                        <h4>{service.title}</h4>
+                        <span>Leer mas</span>
+                    </article>
+                ))
+            }
         </section>
 
         <style jsx>{`
@@ -48,6 +40,7 @@ export default function ServicesGrid() {
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
+                padding:.2rem;
             }
 
             .bg-service-image {
@@ -63,6 +56,7 @@ export default function ServicesGrid() {
                 position:relative;
                 z-index:1;
                 font-size:1.5rem;
+                text-align:center;
             }
 
             span {
@@ -75,7 +69,7 @@ export default function ServicesGrid() {
             }
 
             .service:hover {
-                transform: scale(1.1);
+                transform: scale(1.08);
             }
 
             @media screen and (max-width:1200px) {
