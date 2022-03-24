@@ -5,7 +5,7 @@ export default function HomeSlider() {
     const [slide, setSlide] = useState(0)
 
     useEffect(() => {
-        setTimeout(nextSlide, 6500)
+        setTimeout(nextSlide, 7000)
         // eslint-disable-next-line
     }, [slide])
 
@@ -22,7 +22,7 @@ export default function HomeSlider() {
         <section className="home_slider">
             <section className="controllers">
                 <button className="arrowBack" onClick={prevSlide}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-left" width="52" height="52" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-left" width="45" height="52" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="5" y1="12" x2="9" y2="16" />
@@ -30,7 +30,7 @@ export default function HomeSlider() {
                     </svg>
                 </button>
                 <button className="arrowForward" onClick={nextSlide}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="52" height="52" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="45" height="52" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="15" y1="16" x2="19" y2="12" />
@@ -41,7 +41,7 @@ export default function HomeSlider() {
 
             <section className="slider">
                 <article className="centered slide-one">
-                    <h4>Tenemos lo que tu vehiculo necesita.</h4>
+                    <h1>Tenemos lo que tu vehiculo necesita.</h1>
                 </article>
                 <article className="centered slide-two">
                     <h4>Enamorate de tu auto cada dia mas.</h4>
@@ -52,9 +52,9 @@ export default function HomeSlider() {
             </section>
 
             <section className="dots">
-                <button className={slide == 0 ? "dot active-dot" : "dot"}/>
-                <button className={slide == 1 ? "dot active-dot" : "dot"}/>
-                <button className={slide == 2 ? "dot active-dot" : "dot"}/>
+                <button className={slide == 0 ? "dot active-dot" : "dot"} onClick={() => setSlide(0)}/>
+                <button className={slide == 1 ? "dot active-dot" : "dot"} onClick={() => setSlide(1)}/>
+                <button className={slide == 2 ? "dot active-dot" : "dot"} onClick={() => setSlide(2)}/>
             </section>
         </section>
 
@@ -89,13 +89,15 @@ export default function HomeSlider() {
                 height:85vh;
                 min-width:100vw;
                 display:flex;
-                align-items:start;
+                align-items:center;
                 justify-content:center;
                 background-size:cover;
+                font-family: 'Quicksand'
             }
 
-            h4 {
-                font-size:2.2rem;
+            h1, h4 {
+                text-align:center;
+                font-size:2.25rem;
             }
 
             .controllers {
@@ -118,7 +120,7 @@ export default function HomeSlider() {
 
             .dots {
                 position:absolute;  
-                z-index:8;
+                z-index:12;
                 bottom:0;
                 left:0;
                 width:100%;
