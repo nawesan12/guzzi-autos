@@ -66,7 +66,6 @@ export default function HomeSlider() {
             }
 
             .slider {
-                min-height:100vh;
                 width:auto;
                 display:flex;
                 transition: all .4s ease;
@@ -82,7 +81,7 @@ export default function HomeSlider() {
             }
 
             .slide-three {
-                background:url('/images/backgrounds/home3.jpg') no-repeat;
+                background:url('/images/backgrounds/home3.jpg') no-repeat top center;
             }
 
             .centered {
@@ -92,7 +91,7 @@ export default function HomeSlider() {
                 align-items:center;
                 justify-content:center;
                 background-size:cover;
-                font-family: 'Quicksand'
+                font-family: 'Quicksand';
             }
 
             h1, h4 {
@@ -141,6 +140,30 @@ export default function HomeSlider() {
 
             .active-dot {
                 background:var(--boring-bg);
+            }
+
+            @media screen and (max-width:1200px) {
+                .home_slider {
+                    height:80vh;
+                    margin-bottom:10vh;
+                }
+
+                .centered {
+                    height:80vh;
+                }
+
+                .slide-one, .slide-two, .slide-three {
+                    background-size:cover;
+                    background-position:left;
+                }
+
+                .controllers {
+                    width:95%;
+                    height:70%;
+                    display:flex;
+                    align-items:flex-end;
+                    left:2.5%;
+                }
             }
         `}</style>
         </>

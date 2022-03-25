@@ -68,11 +68,12 @@ export default function Header() {
                 display:flex;
                 flex-direction:column;
                 align-items:center;
+                justify-content:space-evenly;
             }    
 
             .logo {
                 position:relative;
-                height:55rem;
+                min-height:6rem;
                 width:23rem;
                 top:.5rem;
             }
@@ -87,6 +88,7 @@ export default function Header() {
                 font-weight:500;
                 transition: all .2s ease;
                 border: 3px solid transparent;
+                padding:.4rem 0 0;
             }
 
             .nav_item:hover {
