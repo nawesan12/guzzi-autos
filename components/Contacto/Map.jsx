@@ -40,7 +40,7 @@ export default function Map() {
                 .map {
                     grid-column:1 / 2;
                     grid-row:2 / 3;
-                    padding:1rem 2rem;
+                    padding:0 2rem 1rem;
                 }    
             `}</style>
         </>

@@ -1,22 +1,35 @@
-import Star from '../icons/Star'
+import { useState } from 'react'
+
+import { handleInput } from '../../utils/handleInput'
+import { uploadData } from '../../utils/uploadData'
 
 export default function Form() {
+
+    const [data, setData] = useState({
+        name: '',
+        email: '',
+        estrellas: [],
+        content: '',
+        createdAt: new Date().toLocaleDateString('es')
+    })
+
     return (
         <>
         <section className="form">
             <h2>Deja tu opinion!</h2>
-            <input type="text" placeholder='Nombre'/>
-            <input type="text" placeholder='Email'/>
+            <input type="text" placeholder='Nombre' onChange={(value) => handleInput('name', value, setData, data)}/>
+            <input type="text" placeholder='Email'  onChange={(value) => handleInput('email', value, setData, data)}/>
 
             <section className="stars_container">
-                <Star size={'1.5rem'} strokeWidth={'1.5'} strokeColor={'#fff'} fillColor={'#fff'} />
-                <Star size={'1.5rem'} strokeWidth={'1.5'} strokeColor={'#fff'} fillColor={'#fff'} />
-                <Star size={'1.5rem'} strokeWidth={'1.5'} strokeColor={'#fff'} fillColor={'#fff'} />
-                <Star size={'1.5rem'} strokeWidth={'1.5'} strokeColor={'#fff'} fillColor={'#fff'} />
-                <Star size={'1.5rem'} strokeWidth={'1.5'} strokeColor={'#fff'} fillColor={'#fff'} />
+                    
             </section>
             
-            <textarea name="message" id="message" cols="30" rows="10" placeholder='Escribe tu reseña...'/>
+            <textarea placeholder='Escribe tu reseña...' onChange={(value) => handleInput('content', value, setData, data)}/>
+            <button onClick={() => uploadData(data, 'comentarios', () => {
+                console.log("Se envio el comentario: ", data)
+            })}>
+                ENVIAR COMENTARIO
+            </button>
         </section>
 
         <style jsx>{`
@@ -30,7 +43,7 @@ export default function Form() {
                 display:flex;
                 flex-direction:column;
                 align-items:center;
-                justify-content:space-around;
+                justify-content:center;
                 padding:1rem 2rem;
             }   
 
@@ -49,11 +62,24 @@ export default function Form() {
             }       
 
             textarea {
-                height:30rem;
+                min-height:30vh;
             }
 
             .stars_container {
                 margin:1rem 0 .8rem;
+            }
+
+            button {
+                background: var(--bordeaux);
+                border:none;
+                border-radius:.2rem;
+                outline:none;
+                margin:1rem 0;
+                padding:1rem 2.4rem;
+                font-weight:500;
+                color:var(--primary-text);
+                font-size:1.1rem;
+                width:70%;
             }
         `}</style>
         </>

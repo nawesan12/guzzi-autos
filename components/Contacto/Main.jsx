@@ -19,18 +19,6 @@ export default function Main() {
                 grid-template-columns:1.5fr 1fr;
                 grid-template-rows:1fr 1fr;
             }
-
-            .form {
-                grid-column:2 / 3;
-                grid-row:1 / 3;
-            }
-
-            
-
-            .contact-list {
-                grid-column:1 / 2;
-                grid-row:1 / 2;
-            }
         `}</style>
         </>
     )

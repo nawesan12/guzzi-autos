@@ -41,7 +41,7 @@ export default function HomeSlider() {
 
             <section className="slider">
                 <article className="centered slide-one">
-                    <h1>Tenemos lo que tu vehiculo necesita.</h1>
+                    <h1>Guzzi Autos <br /> <span>Tenemos lo que tu vehiculo necesita</span></h1>
                 </article>
                 <article className="centered slide-two">
                     <h4>Enamorate de tu auto cada dia mas.</h4>
@@ -97,6 +97,11 @@ export default function HomeSlider() {
             h1, h4 {
                 text-align:center;
                 font-size:2.25rem;
+                text-shadow: 0px 0px 1.2rem var(--primary);
+            }
+
+            h1 span {
+                font-size:1.4rem;
             }
 
             .controllers {

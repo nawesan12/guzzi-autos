@@ -209,6 +209,10 @@ export default function Footer() {
                 text-align:center;
             }
 
+            .cash {
+                border:4px inset var(--primary);
+            }
+
             @media screen and (max-width: 1200px) {
                 .app_footer {
                     display:flex;

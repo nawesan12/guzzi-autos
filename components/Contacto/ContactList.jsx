@@ -48,7 +48,7 @@ export default function ContactList() {
                 display:flex;
                 width:18rem;
                 justify-content:space-between;
-                font-size:1.1rem;
+                font-size:1.25rem;
                 margin-left: .5rem;
             }
         `}</style>
