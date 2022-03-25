@@ -16,7 +16,7 @@ export default function Main() {
                 display:grid;
                 height:100vh;
                 width:100vw;
-                grid-template-columns:1fr 1fr;
+                grid-template-columns:1.5fr 1fr;
                 grid-template-rows:1fr 1fr;
             }
 

@@ -27,8 +27,6 @@ export default function Map() {
         };
     }, []);
 
-    const marker1 = new mapboxgl.Marker().setLngLat([-57.5944249, -37.9898876]).addTo(map);
-
     return (        
         <>
             <section className="map">
@@ -42,7 +40,7 @@ export default function Map() {
                 .map {
                     grid-column:1 / 2;
                     grid-row:2 / 3;
-                    padding:2rem;
+                    padding:1rem 2rem;
                 }    
             `}</style>
         </>
