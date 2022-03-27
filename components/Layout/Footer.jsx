@@ -131,23 +131,24 @@ export default function Footer() {
                 display:grid;
                 grid-template-columns:1fr;
                 grid-template-rows:1.5fr 5fr;
+                margin:auto;
             }
 
             h4 {
-                text-align:center;
+                text-align:left;
                 font-size:1.8rem;
             }
 
             .content {
                 text-align:left;
-                padding:0 .8rem;
+                padding:0 .8rem 0 0;
                 font-weight:500;
                 font-size:1.2rem;
             }
 
             .item {
                 font-size:1.3rem;
-                padding:.4rem 1rem;
+                padding:.4rem .2rem;
                 display:flex;
                 align-items:center;
             }
@@ -164,11 +165,12 @@ export default function Footer() {
                 position:relative;
                 border-radius:.2rem;
                 overflow:hidden;
+                min-width:6rem;
             }
 
             .contact_item {
                 font-size:1.2rem;
-                padding:.4rem 1.5rem;
+                padding:.4rem .5rem;
                 display:flex;
                 align-items:center;
             }
