@@ -64,6 +64,10 @@ export default function ServiceModal(props) {
                 overflow-x:hidden;
             }
 
+            .service_modal::-webkit-scrollbar-thumb {
+                border-radius:0 .25rem 0 0;
+            }
+
             h2 {
                 margin: 0 auto;
             }
