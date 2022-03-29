@@ -30,7 +30,9 @@ export default function CartModal({ itemsSelected }) {
             </section>
 
             <style jsx>{`
-
+                .cart_modal {
+                    display:none;
+                }
             `}</style>
         </>
     )

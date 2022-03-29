@@ -26,7 +26,43 @@ export default function ProductsWrapper({ itemsSelected }) {
                         )
                     })
                 }
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
             </section>
+
+            <style jsx>{`
+                .products-wrapper {
+                    display:flex;
+                    flex-wrap:wrap;
+                    justify-content:space-between;
+                    width:45vw;
+                    background: #fff;
+                    border: 2px solid #eee;
+                    border-radius:.4rem;
+                    padding: 2.5rem 1.5rem 1.5rem;
+                }    
+
+                @media screen and (max-width:1200px) {
+                    .products-wrapper {
+                        width:95vw;
+                        margin:auto;
+                        padding: 2.5rem 1rem;
+                    }
+                }
+            `}</style>
         </>
     )
 }

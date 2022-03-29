@@ -81,8 +81,6 @@ export default function Footer() {
                         <article className="payway cuenta-dni">
                             <Image src="/images/payway/cuentadni.jpg" alt="Cuenta DNI" layout="fill" objectFit="cover"/>
                         </article>
-                        <article className="payway"></article>
-                        <article className="payway"></article>
                     </section>
                 </section>
             </section>

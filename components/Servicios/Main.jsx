@@ -1,4 +1,4 @@
-import Presentation from './Presentation';
+import Presentation from '../Layout/Presentation';
 import ServicesGrid from './ServicesGrid'
 
 export default function Main() {
