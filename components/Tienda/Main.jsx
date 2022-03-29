@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import CartModal from "./Cart/CartModal";
+import ProductsWrapper from './ProductsWrapper';
 
 export default function Main() {
 
@@ -7,7 +8,8 @@ export default function Main() {
 
     return (
         <>  
-            <CartModal itemsSelected={itemsSelected}/>            
+            <ProductsWrapper setItemsSelected={setItemsSelected} itemsSelected={itemsSelected}/>
+            <CartModal itemsSelected={itemsSelected}/>     
         </>
     )
 }
