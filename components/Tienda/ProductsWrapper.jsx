@@ -18,9 +18,9 @@ export default function ProductsWrapper({ itemsSelected, query }) {
 
                 products.map((product, index) => (
                     <Product 
-                        key={index} 
+                        key={index}
                         productName={product.name}
-                        productDescription={product.description} 
+                        productDescription={product.description}
                         productImage={product.image}
                         productWarnings={product.precauciones}
                         productPresentations={product.presentaciones}
@@ -31,6 +31,11 @@ export default function ProductsWrapper({ itemsSelected, query }) {
                     />
                 ))
                 }
+                <Product productImage="/images/backgrounds/home3.jpg"/>
+                <Product productImage="/images/backgrounds/home3.jpg" />
+                <Product productImage="/images/backgrounds/home3.jpg" />
+                <Product productImage="/images/backgrounds/home3.jpg" />
+                <Product productImage="/images/backgrounds/home3.jpg" />
             </section>
 
             <style jsx>{`
@@ -47,7 +52,7 @@ export default function ProductsWrapper({ itemsSelected, query }) {
 
                 @media screen and (max-width:1200px) {
                     .products-wrapper {
-                        width:95vw;
+                        width:97.5vw;
                         margin:auto;
                         padding: 2.5rem 1rem;
                     }

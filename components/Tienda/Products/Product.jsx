@@ -14,11 +14,11 @@ export default function Product(props) {
                     <Image src={props.productImage} alt={props.productDescription} layout="fill" objectFit="cover"/>
                 </div>
                 <section className="product-name">
-                    { props.productName }
+                    {props.productName}
                 </section>
                 <footer>
                     <div className="product-price" title="Consultar">$ Precio</div>
-                    <div className="product-details" title="Ver Detalles">Detalles</div>
+                    <div className="product-details" title="Ver Detalles">Detalles O</div>
                 </footer>
             </article>
 
