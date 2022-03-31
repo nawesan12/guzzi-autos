@@ -14,8 +14,6 @@ export default function ProductsWrapper({ itemsSelected, query }) {
         <>
             <section className="products-wrapper">
                 {
-                // Filter products by query, if query is empty, shows all products
-
                 products.map((product, index) => (
                     <Product 
                         key={index}
