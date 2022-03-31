@@ -6,13 +6,14 @@ import SearchColumn from './SearchColumn';
 
 export default function Main() {
 
-    const [itemsSelected, setItemsSelected] = useState([]);
+    const [itemsSelected, setItemsSelected] = useState([])
+    const [query, setQuery] = useState('')
 
     return (
         <>
         <section className="store_main">  
-            <SearchColumn />
-            <ProductsWrapper setItemsSelected={setItemsSelected} itemsSelected={itemsSelected}/>
+            <SearchColumn setQuery={setQuery}/>
+            <ProductsWrapper setItemsSelected={setItemsSelected} itemsSelected={itemsSelected} query={query}/>
             <CartModal itemsSelected={itemsSelected}/>     
         </section>
 
