@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Image from "next/image";
 import ProductDetail from "./ProductDetail";
 
 export default function Product(props) {
+
+    const [detailsOpen, setDetailsOpen] = useState(false);
 
     const addToCart = (item) => {
         props.itemsSelected.push(item)
@@ -18,11 +21,11 @@ export default function Product(props) {
                 </section>
                 <footer>
                     <div className="product-price" title="Consultar">$ Precio</div>
-                    <div className="product-details" title="Ver Detalles">Detalles O</div>
+                    <div className="product-details" title="Ver Detalles">Detalles</div>
                 </footer>
             </article>
 
-            <ProductDetail />
+            { detailsOpen && <ProductDetail  addToCart={addToCart} setDetailsOpen={setDetailsOpen} /> }
 
             <style jsx>{`
                 .product {
@@ -72,15 +75,6 @@ export default function Product(props) {
                     font-weight:bold;
                     color:var(--primary-text);
                     border-radius: 0 0 0 .4rem;
-                }
-
-                .separation {
-                    width:0;
-                    height:0;
-                    border-top:2rem solid var(--bordeaux);
-                    border-right:2rem solid transparent;
-                    border-left:2rem solid transparent;
-                    border-bottom:2rem solid transparent;
                 }
 
                 .product-details {

@@ -29,11 +29,6 @@ export default function ProductsWrapper({ itemsSelected, query }) {
                     />
                 ))
                 }
-                <Product productImage="/images/backgrounds/home3.jpg"/>
-                <Product productImage="/images/backgrounds/home3.jpg" />
-                <Product productImage="/images/backgrounds/home3.jpg" />
-                <Product productImage="/images/backgrounds/home3.jpg" />
-                <Product productImage="/images/backgrounds/home3.jpg" />
             </section>
 
             <style jsx>{`
