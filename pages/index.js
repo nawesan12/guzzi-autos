@@ -6,8 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-          <title>Guzzi Autos</title>
-          <meta name="description" content="Pagina web para Guzzi Autos" />
+          <title>Guzzi Autos - Car Detailing</title>
           <link rel="icon" href="/favicon.ico" />
           <meta charset="utf-8"/>
           <meta name="robots" content="index"/>
@@ -15,7 +14,6 @@ export default function Home() {
           <meta name="keywords" content="Guzzi autos, lavado, autos, auto, lavado de auto partes autopartes, lavado, lavanderia de coches, guzzi, mar del plata"/>
           <meta name="author" content="Nahuel Santillan Web Developer" />
           <meta name="copyright" content="Ricardo Guzzi - Guzzi Autos" />
-          <meta name="description" content="Pagina web para Guzzi Autos" />
       </Head>
 
       <Main/>

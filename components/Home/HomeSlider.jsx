@@ -44,10 +44,10 @@ export default function HomeSlider() {
                     <h1>Guzzi Autos <br /> <span>Tenemos lo que tu vehiculo necesita</span></h1>
                 </article>
                 <article className="centered slide-two">
-                    <h4>Enamorate de tu auto cada dia mas.</h4>
+                    <h4>Enamorate de tu auto cada día mas.</h4>
                 </article>
                 <article className="centered slide-three">
-                    <h4>Como si manejaras uno nuevo todos los dias.</h4>
+                    <h4>Como si manejaras uno nuevo todos los días.</h4>
                 </article>
             </section>
 
