@@ -23,22 +23,22 @@ export default function Header() {
             </section>
             <nav className={isOpen === true ? "navigation active-menu" : "navigation"}>
                 <section className="list">
-                    <li className="nav_item" onClick={hideNav}>
+                    <li className="nav_item" onClick={hideNav} title="Guzzi Autos">
                         <Link href="/"><a>Inicio</a></Link>
                     </li>
-                    <li className="nav_item" onClick={hideNav}>
+                    <li className="nav_item" onClick={hideNav} title="Como si manejaras un auto nuevo">
                         <Link href="/servicios"><a>Servicios</a></Link>
                     </li>
-                    <li className="nav_item" onClick={hideNav}>
+                    <li className="nav_item" onClick={hideNav} title="Escribinos!">
                         <Link href="/contacto"><a>Contacto</a></Link>
                     </li>
-                    <li className="nav_item" onClick={hideNav}>
+                    <li className="nav_item" onClick={hideNav} title="Revisa nuestras reseñas!">
                         <Link href="/clientes"><a>Clientes</a></Link>
                     </li>
-                    <li className="nav_item" onClick={hideNav}>
+                    <li className="nav_item" onClick={hideNav} title="Tenemos el usado que buscas">
                         <Link href="/ventas"><a>Ventas</a></Link>
                     </li>
-                    <li className="nav_item" onClick={hideNav}>
+                    <li className="nav_item" onClick={hideNav} title="Tenemos lo que tu vehiculo necesita">
                         <Link href="/tienda"><a>Tienda</a></Link>
                     </li>
                 </section>   

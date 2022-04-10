@@ -1,23 +1,24 @@
+import Image from "next/image";
 import ProductDetail from "./ProductDetail";
 
-export default function Product({ itemsSelected }) {
+export default function Product(props) {
 
     const addToCart = (item) => {
-        itemsSelected.push(item)
+        props.itemsSelected.push(item)
     }
 
     return(
         <>
-            <article className="product">
+            <article className="product" title={props.productName}>
                 <div className="product-image">
-
+                    <Image src={props.productImage} alt={props.productDescription} layout="fill" objectFit="cover"/>
                 </div>
                 <section className="product-name">
-
+                    {props.productName}
                 </section>
                 <footer>
-                    <div className="product-price">$ Precio</div>
-                    <div className="product-details">Detalles</div>
+                    <div className="product-price" title="Consultar">$ Precio</div>
+                    <div className="product-details" title="Ver Detalles">Detalles O</div>
                 </footer>
             </article>
 
@@ -25,7 +26,7 @@ export default function Product({ itemsSelected }) {
 
             <style jsx>{`
                 .product {
-                    height:20rem;
+                    height:19rem;
                     width:32%;
                     margin-bottom:1rem;
                     display:flex;
@@ -48,7 +49,9 @@ export default function Product({ itemsSelected }) {
                     height:30%;
                     border-right:1px solid #999;
                     border-left:1px solid #999;
-                    text-align:center;
+                    display:grid;
+                    place-items:center;
+                    font-weight:500;
                 }
 
                 footer {
@@ -86,6 +89,7 @@ export default function Product({ itemsSelected }) {
                     background:var(--boring);
                     width:50%;
                     border-radius: 0 0 .4rem;
+                    font-weight:500;
                 }
 
                 @media screen and (max-width:1200px) {
