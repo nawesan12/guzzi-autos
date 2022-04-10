@@ -14,20 +14,22 @@ export default function ProductsWrapper({ itemsSelected, query }) {
         <>
             <section className="products-wrapper">
                 {
-                products.map((product, index) => (
-                    <Product 
-                        key={index}
-                        productName={product.name}
-                        productDescription={product.description}
-                        productImage={product.image}
-                        productWarnings={product.precauciones}
-                        productPresentations={product.presentaciones}
-                        productPrologue={product.prologo}
-                        productSubtitle={product.subtitle}
-                        productUse={product.uso}
-                        itemsSelected={itemsSelected} 
-                    />
-                ))
+                products.length === 0 ? 
+                    <p>Cargando...</p> :
+                    products.map((product, index) => (
+                        <Product 
+                            key={index}
+                            productName={product.name}
+                            productDescription={product.description}
+                            productImage={product.image}
+                            productWarnings={product.precauciones}
+                            productPresentations={product.presentaciones}
+                            productPrologue={product.prologo}
+                            productSubtitle={product.subtitle}
+                            productUse={product.uso}
+                            itemsSelected={itemsSelected} 
+                        />
+                    ))
                 }
             </section>
 
