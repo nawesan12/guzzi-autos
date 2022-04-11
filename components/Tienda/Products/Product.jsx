@@ -6,8 +6,9 @@ export default function Product(props) {
 
     const [detailsOpen, setDetailsOpen] = useState(false);
 
-    const addToCart = (item) => {
-        props.itemsSelected.push(item)
+    const addToCart = () => {
+        props.itemsSelected.push({name: props.productName, price: props.productPrice, image: props.productImage});
+        console.log(props.itemsSelected)
     }
 
     return(
@@ -21,11 +22,11 @@ export default function Product(props) {
                 </section>
                 <footer>
                     <div className="product-price" title="Consultar">$ Precio</div>
-                    <div className="product-details" title="Ver Detalles">Detalles</div>
+                    <button className="product-details" title="Ver Detalles" onClick={() => setDetailsOpen(true)}>Detalles</button>
                 </footer>
             </article>
 
-            { detailsOpen && <ProductDetail  addToCart={addToCart} setDetailsOpen={setDetailsOpen} /> }
+            { detailsOpen && <ProductDetail addToCart={addToCart} setDetailsOpen={setDetailsOpen} /> }
 
             <style jsx>{`
                 .product {
@@ -83,7 +84,9 @@ export default function Product(props) {
                     background:var(--boring);
                     width:50%;
                     border-radius: 0 0 .4rem;
-                    font-weight:500;
+                    outline:none;
+                    border:none;
+                    font-weight:bold;
                 }
 
                 @media screen and (max-width:1200px) {

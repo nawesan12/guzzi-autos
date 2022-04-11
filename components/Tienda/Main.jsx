@@ -12,7 +12,7 @@ export default function Main() {
     return (
         <>
         <section className="store_main">  
-            <SearchColumn setQuery={setQuery}/>
+            <SearchColumn setQuery={setQuery} query={query}/>
             <ProductsWrapper setItemsSelected={setItemsSelected} itemsSelected={itemsSelected} query={query}/>
             <CartModal itemsSelected={itemsSelected}/>     
         </section>

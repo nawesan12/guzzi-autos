@@ -1,9 +1,14 @@
-export default function SearchColumn() {
+import { handleInput } from "../../utils/handleInput"
+
+export default function SearchColumn({ setQuery, query }) {
+
+    
+
     return (
         <>
             <section className="search_column">
                 <h1>Guzzi Autos</h1>
-                <input type="text" placeholder="Buscar Producto" />        
+                <input type="text" placeholder="Buscar Producto" onChange={(value) => handleInput('query', value, setQuery, query)}/>        
             </section>
             <style jsx>{`
                 .search_column {
