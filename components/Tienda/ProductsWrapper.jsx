@@ -19,14 +19,7 @@ export default function ProductsWrapper({ itemsSelected, query }) {
                     products.map((product, index) => (
                         <Product 
                             key={index}
-                            productName={product.name}
-                            productDescription={product.description}
-                            productImage={product.image}
-                            productWarnings={product.precauciones}
-                            productPresentations={product.presentaciones}
-                            productPrologue={product.prologo}
-                            productSubtitle={product.subtitle}
-                            productUse={product.uso}
+                            {...product}
                             itemsSelected={itemsSelected} 
                         />
                     ))

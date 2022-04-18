@@ -7,26 +7,26 @@ export default function Product(props) {
     const [detailsOpen, setDetailsOpen] = useState(false);
 
     const addToCart = () => {
-        props.itemsSelected.push({name: props.productName, price: props.productPrice, image: props.productImage});
+        props.itemsSelected.push({name: props.name, price: props.price, image: props.image});
         console.log(props.itemsSelected)
     }
 
     return(
         <>
-            <article className="product" title={props.productName}>
+            <article className="product" title={props.name} onClick={() => setDetailsOpen(true)}>
                 <div className="product-image">
-                    <Image src={props.productImage} alt={props.productDescription} layout="fill" objectFit="cover"/>
+                    <Image src={props.image} alt={props.description} layout="fill" objectFit="cover"/>
                 </div>
                 <section className="product-name">
-                    {props.productName}
+                    {props.name}
                 </section>
                 <footer>
-                    <div className="product-price" title="Consultar">$ Precio</div>
-                    <button className="product-details" title="Ver Detalles" onClick={() => setDetailsOpen(true)}>Detalles</button>
+                    <div className="product-price" title="Consultar">${props.price}</div>
+                    <button className="product-details" title="Ver Detalles">Detalles</button>
                 </footer>
             </article>
 
-            { detailsOpen && <ProductDetail addToCart={addToCart} setDetailsOpen={setDetailsOpen} /> }
+            { detailsOpen && <ProductDetail  {...props} addToCart={addToCart} setDetailsOpen={setDetailsOpen} /> }
 
             <style jsx>{`
                 .product {
@@ -37,7 +37,7 @@ export default function Product(props) {
                     align-items:center;
                     flex-direction:column;
                     justify-content:space-between;
-                    border-radius: 0 0 .4rem .4rem;
+                    border-radius: .2rem .2rem .4rem .4rem;
                     cursor:pointer;
                 }    
 
@@ -45,6 +45,8 @@ export default function Product(props) {
                     height:55%;
                     width:100%;
                     position:relative;
+                    border-radius: .2rem .2rem 0 0;
+                    overflow:hidden;
                     background:var(--boring);
                 }
 
@@ -64,8 +66,6 @@ export default function Product(props) {
                     display:flex;
                     justify-content:space-between;
                     border-radius: 0 0 .4rem .4rem;
-                    cursor:pointer;
-
                 }
 
                 .product-price {
