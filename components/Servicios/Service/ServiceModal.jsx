@@ -21,7 +21,7 @@ export default function ServiceModal(props) {
                     <h2>{props.title}</h2>
                     <p>{props.description}</p>
                     <div className="image-container">
-                        <Image src={props.image} alt={props.description} layout="fill" objectFit="cover"/>
+                        <Image src={props.image} alt={"Guzzi Autos - Car detailing" + props.description} layout="fill" objectFit="cover"/>
                     </div>
                 </section>
             </article>

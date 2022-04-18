@@ -15,7 +15,7 @@ export default function Product(props) {
         <>
             <article className="product" title={props.name} onClick={() => setDetailsOpen(true)}>
                 <div className="product-image">
-                    <Image src={props.image} alt={props.description} layout="fill" objectFit="cover"/>
+                    <Image src={props.image} alt={"Guzzi Autos - Car detailing" + props.description} layout="fill" objectFit="cover"/>
                 </div>
                 <section className="product-name">
                     {props.name}

@@ -11,7 +11,7 @@ export default function Service(props) {
         <>
         <article className="service" onClick={() => setShowModal(true)}>
             <section className="bg-service-image">
-                <Image src={props.image} alt={props.description} layout="fill" objectFit="cover" priority/>
+                <Image src={props.image} alt={"Guzzi Autos - Car detailing" + props.description} layout="fill" objectFit="cover" priority/>
             </section>
             <h4>{props.title}</h4>
             <span>Leer mas</span>

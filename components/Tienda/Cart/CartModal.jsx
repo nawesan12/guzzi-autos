@@ -30,7 +30,7 @@ export default function CartModal({ itemsSelected, setCartOpen }) {
                                 itemsSelected.map((item, index) => (
                                 <li className="product" key={index}>
                                     <div className="item_information">
-                                        <Image src={item.image} width={75} height={75} alt={item.description} />
+                                        <Image src={item.image} width={75} height={75} alt={"Guzzi Autos - Car detailing" +item.description} />
                                         <p>{item.name}</p>
                                     </div>
                                     <span className="price">${item.price}</span>

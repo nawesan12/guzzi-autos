@@ -7,25 +7,25 @@ export default function ContactList() {
             <section className="list">
                 <li className="item">
                     <span className="image_container">
-                        <Image src="/images/icons/whatsapp.png" alt="" width={28} height={28} />
+                        <Image src="/images/icons/whatsapp.png" alt="Guzzi Autos Whatsapp" width={28} height={28} />
                     </span>
                     <p><b>Telefono:</b>    223 5 929292</p>
                 </li>
                 <li className="item">
                     <span className="image_container">
-                        <Image src="/images/icons/instagram.png" alt="" width={28} height={28} />
+                        <Image src="/images/icons/instagram.png" alt="Guzzi Autos - Car detailing Instagram" width={28} height={28} />
                     </span>
                     <p><b>Instagram:</b>    @guzziautos</p>
                 </li>
                 <li className="item">
                     <span className="image_container">
-                        <Image src="/images/icons/facebook.png" alt="" width={28} height={28} />
+                        <Image src="/images/icons/facebook.png" alt="Guzzi Autos - Car detailing Facebook" width={28} height={28} />
                     </span>
                     <p><b>Facebook:</b>    Guzzi Autos</p>
                 </li>
                 <li className="item">
                     <span className="image_container">
-                        <Image src="/images/icons/address.png" alt="" width={28} height={28} />
+                        <Image src="/images/icons/address.png" alt="Guzzi Autos - Car detailing direccion" width={28} height={28} />
                     </span>
                     <p><b>Direccion:</b>    Bordabehere 9292</p>
                 </li>

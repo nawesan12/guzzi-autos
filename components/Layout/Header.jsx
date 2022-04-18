@@ -19,7 +19,7 @@ export default function Header() {
         <>
         <header className="app_header">
             <section className="logo">
-                <Image src="/images/tarjeta.png" alt="Logo" layout='fill' objectFit="cover" />
+                <Image src="/images/tarjeta.png" alt="Guzzi Autos - Car detailing logo" layout='fill' objectFit="cover" />
             </section>
             <nav className={isOpen === true ? "navigation active-menu" : "navigation"}>
                 <section className="list">
@@ -44,9 +44,9 @@ export default function Header() {
                 </section>   
 
                 <section className="social-media">
-                    <div className="fb"><Image src="/images/icons/facebook.png" alt="" layout="fill" objectFit="cover"/></div>
-                    <div className="insta" ><Image src="/images/icons/instagram.png" alt="" layout="fill" objectFit="cover"/></div>
-                    <div className="wsp" ><Image src="/images/icons/whatsapp.png" alt="" layout="fill" objectFit="cover"/></div>
+                    <div className="fb"><Image src="/images/icons/facebook.png" alt="Guzzi Autos - Car detailing facebook" layout="fill" objectFit="cover"/></div>
+                    <div className="insta" ><Image src="/images/icons/instagram.png" alt="Guzzi Autos - Car detailing facebook" layout="fill" objectFit="cover"/></div>
+                    <div className="wsp" ><Image src="/images/icons/whatsapp.png" alt="Guzzi Autos - Car detailing whatsapp" layout="fill" objectFit="cover"/></div>
                 </section>
             </nav>
             <section className="burger" onClick={toggleNav}>

@@ -71,16 +71,16 @@ export default function Footer() {
                 <section className="content">
                     <section className="payways-grid">
                         <article className="payway visa">
-                            <Image src="/images/payway/visa.png" alt="Visa" layout="fill" objectFit="cover"/>
+                            <Image src="/images/payway/visa.png" alt="Visa Guzzi Autos - Car detailing" layout="fill" objectFit="cover"/>
                         </article>
                         <article className="payway cash">
-                            <Image src="/images/payway/cash.png" alt="Efectivo" layout="fill" objectFit="cover"/>
+                            <Image src="/images/payway/cash.png" alt="Efectivo Guzzi Autos - Car detailing" layout="fill" objectFit="cover"/>
                         </article>
                         <article className="payway mercadopago">
-                            <Image src="/images/payway/mercadopago.jpg" alt="Mercado Pago" layout="fill" objectFit="cover"/>
+                            <Image src="/images/payway/mercadopago.jpg" alt="Mercado Pago Guzzi Autos - Car detailing" layout="fill" objectFit="cover"/>
                         </article>
                         <article className="payway cuenta-dni">
-                            <Image src="/images/payway/cuentadni.jpg" alt="Cuenta DNI" layout="fill" objectFit="cover"/>
+                            <Image src="/images/payway/cuentadni.jpg" alt="Cuenta DNI Guzzi Autos - Car detailing" layout="fill" objectFit="cover"/>
                         </article>
                     </section>
                 </section>
@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="copyright">Guzzi Autos - Todos los derechos reservados - 2022</div>
             <div className="logo">
                 <div className="logo-container">
-                    <Image src="/images/car.png" alt="Guzzi Autos" layout="fill" objectFit="cover"/>
+                    <Image src="/images/car.png" alt="Guzzi Autos - Car detailing logo" layout="fill" objectFit="cover"/>
                 </div>
                 <h2>Guzzi Autos</h2>
             </div>
