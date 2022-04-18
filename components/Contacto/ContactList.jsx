@@ -12,16 +12,20 @@ export default function ContactList() {
                     <p><b>Telefono:</b>    223 5 929292</p>
                 </li>
                 <li className="item">
-                    <span className="image_container">
-                        <Image src="/images/icons/instagram.png" alt="Guzzi Autos - Car detailing Instagram" width={28} height={28} />
-                    </span>
-                    <p><b>Instagram:</b>    @guzziautos</p>
+                    <a href="https://instagram.com/guzziautos">
+                        <span className="image_container">
+                            <Image src="/images/icons/instagram.png" alt="Guzzi Autos - Car detailing Instagram" width={28} height={28} />
+                        </span>
+                        <p><b>Instagram:</b>    @guzziautos</p>
+                    </a>
                 </li>
                 <li className="item">
-                    <span className="image_container">
-                        <Image src="/images/icons/facebook.png" alt="Guzzi Autos - Car detailing Facebook" width={28} height={28} />
-                    </span>
-                    <p><b>Facebook:</b>    Guzzi Autos</p>
+                    <a href="https://www.facebook.com/Guzzi-Autos-112314927616800">
+                        <span className="image_container">
+                            <Image src="/images/icons/facebook.png" alt="Guzzi Autos - Car detailing Facebook" width={28} height={28} />
+                        </span>
+                        <p><b>Facebook:</b>    Guzzi Autos</p>
+                    </a>
                 </li>
                 <li className="item">
                     <span className="image_container">

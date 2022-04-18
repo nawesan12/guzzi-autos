@@ -44,9 +44,9 @@ export default function Header() {
                 </section>   
 
                 <section className="social-media">
-                    <div className="fb"><Image src="/images/icons/facebook.png" alt="Guzzi Autos - Car detailing facebook" layout="fill" objectFit="cover"/></div>
-                    <div className="insta" ><Image src="/images/icons/instagram.png" alt="Guzzi Autos - Car detailing facebook" layout="fill" objectFit="cover"/></div>
-                    <div className="wsp" ><Image src="/images/icons/whatsapp.png" alt="Guzzi Autos - Car detailing whatsapp" layout="fill" objectFit="cover"/></div>
+                    <div className="fb"><a href="https://www.facebook.com/Guzzi-Autos-112314927616800"><Image src="/images/icons/facebook.png" alt="Guzzi Autos - Car detailing facebook" layout="fill" objectFit="cover"/></a></div>
+                    <div className="insta" ><a href="https://instagram.com/guzziautos"><Image src="/images/icons/instagram.png" alt="Guzzi Autos - Car detailing instagram" layout="fill" objectFit="cover"/></a></div>
+                    <div className="wsp"><a href=""><Image src="/images/icons/whatsapp.png" alt="Guzzi Autos - Car detailing whatsapp" layout="fill" objectFit="cover"/></a></div>
                 </section>
             </nav>
             <section className="burger" onClick={toggleNav}>
