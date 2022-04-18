@@ -42,6 +42,13 @@ export default function Map() {
                     grid-row:2 / 3;
                     padding:0 2rem 1rem;
                 }    
+
+                @media screen and (max-width:1200px) {
+                    .map {
+                        height:20rem;
+                        width:100vw;
+                    }
+                }
             `}</style>
         </>
     )

@@ -19,6 +19,14 @@ export default function Main() {
                 grid-template-columns:1.5fr 1fr;
                 grid-template-rows:1fr 1fr;
             }
+
+            @media screen and (max-width:1200px) {
+                .contact {
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    height:auto;
+            }
         `}</style>
         </>
     )

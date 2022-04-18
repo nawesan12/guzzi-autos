@@ -81,6 +81,12 @@ export default function Form() {
                 font-size:1.1rem;
                 width:70%;
             }
+
+            @media screen and (max-width:1200px) {
+                input,textarea {
+                    width:100%;
+                }
+            }
         `}</style>
         </>
     )

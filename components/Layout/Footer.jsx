@@ -8,7 +8,8 @@ export default function Footer() {
             <section className="column">
                 <h4>Guzzi Autos</h4>
                 <section className="content">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam commodi in maiores. Expedita itaque blanditiis maxime deserunt odit, dolore amet.</p>
+                    <p>Guzzi Autos - Car Detailing</p>
+                    <p>Somos una empresa dedicada a la limpieza, mantenimiento y venta de automoviles! No dudes en consultarnos.</p>
                 </section>
             </section>
             <section className="column">

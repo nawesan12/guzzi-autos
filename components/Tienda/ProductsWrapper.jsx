@@ -15,7 +15,7 @@ export default function ProductsWrapper({ itemsSelected, query }) {
             <section className="products-wrapper">
                 {
                 products.length === 0 ? 
-                    <p>Cargando...</p> :
+                    <h2>Cargando...</h2> :
                     products.map((product, index) => (
                         <Product 
                             key={index}

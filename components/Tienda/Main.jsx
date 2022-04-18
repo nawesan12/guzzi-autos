@@ -7,14 +7,15 @@ import SearchColumn from './SearchColumn';
 export default function Main() {
 
     const [itemsSelected, setItemsSelected] = useState([])
+    const [cartOpen, setCartOpen] = useState(false)
     const [query, setQuery] = useState('')
 
     return (
         <>
         <section className="store_main">  
-            <SearchColumn setQuery={setQuery} query={query}/>
+            <SearchColumn setQuery={setQuery} query={query} setCartOpen={setCartOpen}/>
             <ProductsWrapper setItemsSelected={setItemsSelected} itemsSelected={itemsSelected} query={query}/>
-            <CartModal itemsSelected={itemsSelected}/>     
+            {cartOpen && <CartModal itemsSelected={itemsSelected} setCartOpen={setCartOpen} />}
         </section>
 
         <style jsx>{`

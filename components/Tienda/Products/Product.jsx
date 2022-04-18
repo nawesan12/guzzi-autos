@@ -41,6 +41,10 @@ export default function Product(props) {
                     cursor:pointer;
                 }    
 
+                .product:hover {
+                    transform: scale(1.01);
+                }
+
                 .product-image {
                     height:55%;
                     width:100%;
@@ -87,6 +91,7 @@ export default function Product(props) {
                     outline:none;
                     border:none;
                     font-weight:bold;
+                    cursor:pointer;
                 }
 
                 @media screen and (max-width:1200px) {

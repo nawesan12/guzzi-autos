@@ -6,7 +6,7 @@ export default function ProductDetail(props) {
             <section className="product_details">
                 <span className="close_modal" onClick={() => props.setDetailsOpen(false)}>X</span>
                 <h3>{props.name}</h3>
-                <h3>{props.price}</h3>
+                <h3>${props.price}</h3>
                 <p>{props.description}</p>
                 <button onClick={props.addToCart}>Añadirrr</button>
             </section>
