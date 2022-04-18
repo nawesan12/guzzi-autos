@@ -5,7 +5,7 @@ export default function QuoteSection() {
             <div className="diagonal-separation" />
 
             <div className="content">
-                <h4>Enamorate de tu auto cada dia mas.</h4>
+                <h4>Enamorate de tu auto cada día mas.</h4>
             </div>
         </section>
 
