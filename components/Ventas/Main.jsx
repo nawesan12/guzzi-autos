@@ -1,4 +1,5 @@
 import Presentation from "../Layout/Presentation"
+import CarsWrapper from "./CarsWrapper"
 
 export default function Main() {
     return(

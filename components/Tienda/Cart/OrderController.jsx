@@ -10,22 +10,21 @@ export default function OrderController({ order, setOrder, setCartOpen }) {
     }
 
     const confirmOrder = () => {
-        generateOrderId()
-        openConfirmationModal(true)
-    }
-
-    const uploadOrder = async () => {
         if (order.items.length === 0 || order.clientName === '' || order.clientEmail === '' || order.clientPhone === '') {
             alert('Te falto algo por rellenar!')
         } else {
-            await uploadData(order, 'pedidos', () => {
-                alert('Pedido enviado!')
-                openConfirmationModal(false)
-                setCartOpen(false)
-                setOrder({})
-            })   
+            generateOrderId()
+            openConfirmationModal(true)
         }
+    }
 
+    const uploadOrder = async () => {
+        await uploadData(order, 'pedidos', () => {
+            alert('Pedido enviado!')
+            openConfirmationModal(false)
+            setCartOpen(false)
+            setOrder({})
+        })
     }
 
     return (
